@@ -22,7 +22,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const officeAddress = "1 Baker Street, W1U 8ED London";
   const emailAddress = "example@example.com";
   const phoneNumber = "123 456 7890";
-  const initial = "XXX";
+  const INITIAL = "XXX";
+  const SEE_DETAILS = "Click to see contact details";
+  const HIDE_DETAILS = "Click to hide contact details";
+
   let detailsShown = false;
 
   const contactDetails = [
@@ -32,18 +35,17 @@ document.addEventListener("DOMContentLoaded", () => {
   ];
 
   const detailsButton = document.getElementById("contact-details-btn");
-  detailsButton.innerText = "Click to see contact details";
+  detailsButton.innerText = SEE_DETAILS;
   detailsButton.onclick = () => toggleDetails();
 
-  contactDetails.forEach(item => (item.innerText = initial));
+  contactDetails.forEach(item => (item.innerText = INITIAL));
 
   const toggleDetails = () => {
     detailsShown = !detailsShown;
-    detailsButton.innerText = !detailsShown
-      ? "Click to see contact details"
-      : "Click to hide contact details";
-    contactDetails[0].innerText = detailsShown ? officeAddress : initial;
-    contactDetails[1].innerText = detailsShown ? emailAddress : initial;
-    contactDetails[2].innerText = detailsShown ? phoneNumber : initial;
+    detailsButton.innerText = !detailsShown ? SEE_DETAILS : HIDE_DETAILS;
+
+    contactDetails[0].innerText = detailsShown ? officeAddress : INITIAL;
+    contactDetails[1].innerText = detailsShown ? emailAddress : INITIAL;
+    contactDetails[2].innerText = detailsShown ? phoneNumber : INITIAL;
   };
 });

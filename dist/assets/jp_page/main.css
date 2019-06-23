@@ -1604,7 +1604,7 @@ a {
 .w3-gray,
 .w3-hover-gray:hover {
   color: #000 !important;
-  background-color: #9e9e9e !important;
+  background-color: rgb(241, 241, 241) !important;
 }
 
 .w3-light-grey,
