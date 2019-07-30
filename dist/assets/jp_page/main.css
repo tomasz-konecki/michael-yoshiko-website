@@ -1591,6 +1591,7 @@ a {
 .w3-hover-white:hover {
   color: #000 !important;
   background-color: #fff !important;
+  text-decoration: none;
 }
 
 .w3-black,

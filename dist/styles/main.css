@@ -29,6 +29,15 @@ body {
   margin: 0;
 }
 
+.font-small {
+  font-size: 14px;
+}
+
+.justified {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 .w3-half img {
   margin-bottom: -6px;
   margin-top: 16px;
@@ -1618,6 +1627,7 @@ a {
 .w3-hover-white:hover {
   color: #000 !important;
   background-color: #fff !important;
+  text-decoration: none;
 }
 
 .w3-black,
