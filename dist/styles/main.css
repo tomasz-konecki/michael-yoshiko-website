@@ -1987,3 +1987,46 @@ a {
 button#contact-details-btn {
   width: 230px;
 }
+
+.send-email-icon-container a {
+  display: inline-block;
+  /* transition-timing-function: ease; */
+  transition: 0.2s ease;
+}
+
+.send-email-icon-container a:hover {
+  opacity: 0.7;
+}
+
+.send-email-icon-container a:active {
+  transform: translate(0px, 2px);
+}
+
+.contact-details-btn {
+  width: 30% !important;
+  transition: 0.1s ease;
+}
+
+.contact-details-btn:hover {
+  outline: none;
+}
+
+.contact-details-btn:active {
+  transform: translate(0px, 2px);
+}
+
+footer {
+  width: 80%;
+  margin-left: 20%;
+  margin-top: 30px;
+  padding-right: 58px;
+}
+
+.copyright-notice-container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.copyright-notice-container a {
+  font-style: italic;
+}

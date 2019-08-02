@@ -1943,3 +1943,19 @@ a {
 .w3-hover-border-pale-blue:hover {
   border-color: #e7ffff !important;
 }
+
+footer {
+  width: 80%;
+  margin-left: 20%;
+  margin-top: 30px;
+  padding-right: 58px;
+}
+
+.copyright-notice-container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.copyright-notice-container a {
+  font-style: italic;
+}
