@@ -2007,7 +2007,7 @@ button#contact-details-btn {
   transition: 0.1s ease;
 }
 
-.contact-details-btn:hover {
+.contact-details-btn {
   outline: none;
 }
 
