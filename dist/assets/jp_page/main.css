@@ -1944,6 +1944,38 @@ a {
   border-color: #e7ffff !important;
 }
 
+.contact-details {
+  height: 100px;
+}
+
+button#contact-details-btn {
+  width: 230px;
+}
+
+.send-email-icon-container a {
+  display: inline-block;
+  /* transition-timing-function: ease; */
+  transition: 0.2s ease;
+}
+
+.send-email-icon-container a:hover {
+  opacity: 0.7;
+}
+
+.send-email-icon-container a:active {
+  transform: translate(0px, 2px);
+}
+
+.contact-details-btn {
+  width: 30% !important;
+  transition: 0.1s ease;
+  outline: none;
+}
+
+.contact-details-btn:active {
+  transform: translate(0px, 2px);
+}
+
 footer {
   width: 80%;
   margin-left: 20%;
@@ -1958,4 +1990,13 @@ footer {
 
 .copyright-notice-container a {
   font-style: italic;
+}
+
+@media only screen and (max-width: 992px) {
+  footer {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 30px;
+    padding-right: 58px;
+  }
 }

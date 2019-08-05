@@ -515,14 +515,24 @@ body {font-size:18px;}
     <h1 class="w3-xxxlarge w3-text-red" style="font-weight: bold">お問い合わせ</h1>
      <hr style="border:2px solid #bc002d;" class="w3-round">
          <p style="text-align: right;font-weight: bold"><a href="../../index.html#contact-us" style="text-decoration: none; color: rgb(1, 33, 105); text-align: right">English</a></p> 
-       <img src="../images/Contact.svg"><br><br>
-
-<!-- Text Start -->   
-          <p>翻訳、DTP、その他のプロジェクトについて、どうぞお気軽にご相談ください。お問い合わせには下のフォームをご利用いただけます。</p>
-<!-- Text End --> 
     
+       <!-- Send email icon -->
+       <div class="send-email-icon-container" style="text-align: center">
+        <a href="mailto:m.and.y.translations@gmail.com" title="私たちにメールを送って">
+          <img src="../images/Contact.svg">
+          <!-- <div class="overlay"></div> -->
+        </a>
+      </div>
+      <br>
+      <br>
+      
+      <!-- Text Start -->   
+        <p>翻訳、DTP、その他のプロジェクトについて、どうぞお気軽にご相談ください。お問い合わせには下のフォームをご利用いただけます。</p>
+      <!-- Text End -->
+
+
 <!-- Form Start -->  
-    <form action="/action_page.php" target="_blank">
+    <!-- <form action="/action_page.php" target="_blank">
       <div class="w3-section">
         <label for="fullName">氏名</label>
         <input class="w3-input w3-border" type="text" ame="fullName" id="fullName" required>
@@ -537,16 +547,17 @@ body {font-size:18px;}
               id="message" required></textarea>
       </div>
       <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">メッセージ送信</button>
-    </form>
+    </form> -->
 <!-- Form End --><br>
    
 <!-- Upload button start-->
-    <p>翻訳／DTPの見積もりのためにファイルをお送りいただける場合、「参照」ボタンをクリックするとアップロードを行うことができます。</p>
+    <!-- <p>翻訳／DTPの見積もりのためにファイルをお送りいただける場合、「参照」ボタンをクリックするとアップロードを行うことができます。</p> -->
 <!-- <input type="file" id="myFile"> -->
 <!-- <script>function myFunction() {    var x = document.getElementById("myFile");    x.disabled = true;} -->
-    <input type="button" id="loadFileXml" value="Browse" onclick="document.getElementById('myFile').click();" />
+    <!-- <input type="button" id="loadFileXml" value="Browse" onclick="document.getElementById('myFile').click();" />
     <input type="file" style="display:none;" id="myFile" name="file" />
-</script><br>
+</script> -->
+<br>
 <!-- Upload button end-->
   <div style="text-align:center">
     <br><p class="w3-large" style="font-weight: bold">ご相談・お問い合わせをお待ちしております。</p>
@@ -558,19 +569,19 @@ body {font-size:18px;}
         電話番号：+44 <span id="contact-telephone-number"></span><br>
       </p>
     </div>
-    <button id="contact-details-btn"></button>
+    <button id="contact-details-btn" class="contact-details-btn w3-button w3-red w3-margin-bottom"></button>
   </div>
   <br>
                 
 <!-- Contact Us End-->
 
           
+
+
+</div>
+</div>
+
 <!-- End page content --> 
-    
-
-</div>
-</div>
-
 <footer class="w3-light-grey w3-padding-16">
     <!-- Copyright Notice Start -->
     <div class="copyright-notice-container">
