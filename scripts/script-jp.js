@@ -19,9 +19,9 @@ function onClick(element) {
 
 // The 'Contact details' button handler
 document.addEventListener("DOMContentLoaded", () => {
-  const officeAddress = "1 Baker Street, W1U 8ED London";
-  const emailAddress = "example@example.com";
-  const phoneNumber = "123 456 7890";
+  const officeAddress = "83 Cecil Road, Selly Park, Birmingham B29 7QQ";
+  const emailAddress = "m.and.y.translations@gmail.com";
+  const phoneNumber = "+44 780 9905";
   const INITIAL = "XXX";
   const SEE_DETAILS = "Click to see contact details";
   const HIDE_DETAILS = "Click to hide contact details";
@@ -45,7 +45,9 @@ document.addEventListener("DOMContentLoaded", () => {
     detailsButton.innerText = !detailsShown ? SEE_DETAILS : HIDE_DETAILS;
 
     contactDetails[0].innerText = detailsShown ? officeAddress : INITIAL;
-    contactDetails[1].innerText = detailsShown ? emailAddress : INITIAL;
+    contactDetails[1].innerHTML = detailsShown
+      ? `<a href="mailto:${emailAddress}" target="_top">${emailAddress}</a>`
+      : INITIAL;
     contactDetails[2].innerText = detailsShown ? phoneNumber : INITIAL;
   };
 });
