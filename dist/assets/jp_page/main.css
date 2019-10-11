@@ -2006,9 +2006,9 @@ footer {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 520px) {
   .contact-details-btn {
-    padding-left: 12px;
+    padding-left: 8px;
   }
 }
 
