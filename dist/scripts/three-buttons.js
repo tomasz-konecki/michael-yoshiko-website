@@ -1,4 +1,4 @@
-// Fields
+// Text Fields
 const commercialAddress = document.getElementById("commercial-address");
 const commercialTelephone = document.getElementById("commercial-telephone");
 const commercialEmail = document.getElementById("commercial-email");
@@ -32,27 +32,34 @@ buttons.forEach(btn => {
   btn.onclick = () => toggleCommercialDetails(btn.id);
 });
 
-let addressFlag = false;
-let telephoneFlag = false;
-let emailFlag = false;
+// Flags
+const ADDRESS_FLAG = "addressFlag";
+const TELEPHONE_FLAG = "telephoneFlag";
+const EMAIL_FLAG = "emailFlag";
+
+let flags = {
+  [ADDRESS_FLAG]: false,
+  [TELEPHONE_FLAG]: false,
+  [EMAIL_FLAG]: false
+};
 
 const toggleCommercialDetails = id => {
   const { address, telephone, email } = btnIDs;
 
   switch (id) {
     case address:
-      addressFlag = !addressFlag;
-      buttons[0].innerText = addressFlag ? HIDE : SHOW;
-      fields[0].innerText = addressFlag ? officeAddress : INITIAL;
+      showDetails({ flag: ADDRESS_FLAG, index: 0, text: officeAddress });
       break;
     case telephone:
-      telephoneFlag = !telephoneFlag;
-      buttons[1].innerText = telephoneFlag ? HIDE : SHOW;
-      fields[1].innerText = telephoneFlag ? phoneNumber : INITIAL;
+      showDetails({ flag: TELEPHONE_FLAG, index: 1, text: phoneNumber });
       break;
     case email:
-      emailFlag = !emailFlag;
-      buttons[2].innerText = emailFlag ? HIDE : SHOW;
-      fields[2].innerText = emailFlag ? emailAddress : INITIAL;
+      showDetails({ flag: EMAIL_FLAG, index: 2, text: emailAddress });
   }
+};
+
+const showDetails = ({ flag, index, text }) => {
+  flags[flag] = !flags[flag];
+  buttons[index].innerText = flags[flag] ? HIDE : SHOW;
+  fields[index].innerText = flags[flag] ? text : INITIAL;
 };
