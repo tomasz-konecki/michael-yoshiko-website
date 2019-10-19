@@ -564,16 +564,26 @@
             <div class="w3-container">
                 <table class="w3-table">
                     <tr>
-                        <td width="20%">代表者</td>
-                        <td width="50%">Michael Normoyle</td>
+                        <td style="border: 1px solid transparent" width="20%">代表者</td>
+                        <td style="border: 1px solid transparent" width="60%">Michael Normoyle</td>
                     </tr>
                     <tr>
-                        <td>所在地</td>
-                        <td></td>
+                        <td style="border: 1px solid transparent;">所在地</td>
+                        <td style="border: 1px solid transparent;">
+                          <span id="commercial-address"></span>
+                        </td>
+                        <td style="border: 1px solid transparent;">
+                          <button id="commercial-address-btn" class="commercial-transactions-btn w3-button w3-red w3-margin-bottom"></button>
+                        </td>
                     </tr>
                     <tr>
                         <td>電話番号</td>
-                        <td></td>
+                        <td>
+                          <span id="commercial-telephone"></span>
+                        </td>
+                        <td>
+                          <button id="commercial-telephone-btn" class="commercial-transactions-btn w3-button w3-red w3-margin-bottom"></button>
+                        </td>
                     </tr>
                     <tr>
                         <td>電話受付時間</td>
@@ -581,7 +591,12 @@
                     </tr>
                     <tr>
                         <td>メールアドレス</td>
-                        <td></td>
+                        <td>
+                          <span id="commercial-email"></span>
+                        </td>
+                        <td>
+                          <button id="commercial-email-btn" class="commercial-transactions-btn w3-button w3-red w3-margin-bottom"></button>
+                        </td>
                     </tr>
                     <tr>
                         <td>ホームページURL</td>
@@ -825,6 +840,7 @@
     </footer>
 
     <script src="../../scripts/script-jp.js"></script>
+    <script src="../../scripts/three-buttons.js"></script>
 </body>
 
 </html>

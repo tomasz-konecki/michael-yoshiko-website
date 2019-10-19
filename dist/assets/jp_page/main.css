@@ -1948,11 +1948,6 @@ a {
   height: 100px;
 }
 
-.contact-details-btn {
-  width: 230px;
-  font-size: 14px;
-}
-
 .send-email-icon-container a {
   display: inline-block;
   /* transition-timing-function: ease; */
@@ -1968,6 +1963,7 @@ a {
 }
 
 .contact-details-btn {
+  font-size: 14px;
   width: 30% !important;
   transition: 0.1s ease;
   outline: none;
@@ -1991,6 +1987,18 @@ footer {
 
 .copyright-notice-container a {
   font-style: italic;
+}
+
+.commercial-transactions-btn {
+  padding: 3px 0;
+  width: 60px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.1s ease;
+}
+
+.commercial-transactions-btn:active {
+  transform: translate(0px, 2px);
 }
 
 @media only screen and (max-width: 992px) {
