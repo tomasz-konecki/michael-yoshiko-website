@@ -4,572 +4,843 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link href="https://fonts.googleapis.com/earlyaccess/mplus1p.css"  />
+<link href="https://fonts.googleapis.com/earlyaccess/mplus1p.css" />
 <link rel="stylesheet" href="main.css">
 <style>
-body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
-body {font-size:18px;}
-.row{  display: flex;  flex-wrap: wrap;  padding: 0 4px;  }
-.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
-.w3-half img:hover{opacity:1}
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: "Poppins", sans-serif
+    }
+
+    body {
+        font-size: 18px;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+    }
+
+    .w3-half img {
+        margin-bottom: -6px;
+        margin-top: 16px;
+        opacity: 0.8;
+        cursor: pointer
+    }
+
+    .w3-half img:hover {
+        opacity: 1
+    }
 </style>
+
 <body>
 
-<!-- Sidebar/menu start -->
-<nav class="w3-sidebar w3-red w3-collapse w3-top w3-medium w3-padding" style="z-index:3;width:320px;font-weight:bold;" id="mySidebar"><br>
-    
-<!-- Close menu -->    
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px;text-decoration: none;">メニューを閉じる</a>
-  <div class="w3-container">   <a href="#welcome"><img src="../images/Logo%20for%20web%2014%20Sep.svg"></a>  </div>
-<!-- Close menu --> 
-      
-  <div class="w3-bar-block">
-    <a href="#welcome" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">ようこそ</a> 
-    <a href="#translation" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">翻訳</a> 
-    <a href="#desktop-publishing-and-other-services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">DTP／その他のサービス</a> 
-      <a href="#how-we-work" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">M&Yの作業プロセス</a> 
-        <a href="#testimonials" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">お客様の声</a>
-    <a href="#pricing-charges-payment" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">レート／料金／お支払い</a>  
-      <a href="#about-us" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">M&Yについて</a>
-            <a href="#links" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">リンク</a>  
-      <a href="#our-translation-blog" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">翻訳ブログ</a>
-             <a href="#privacy-policy" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">プライバシーポリシー</a>
-         <a href="#contact-us" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">お問い合わせ</a>
- </div>
-</nav>
-<!-- Sidebar/menu end -->
-    
-<!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
-  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()" style="text-decoration: none;">☰</a>
-  <span>M &amp;Y Translations</span>
-</header>
+    <!-- Sidebar/menu start -->
+    <nav class="w3-sidebar w3-red w3-collapse w3-top w3-medium w3-padding" style="z-index:3;width:320px;font-weight:bold;" id="mySidebar">
+        <br>
 
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:360px;margin-right:110px">
-    
-<!-- Welcome Start -->
-<div class="w3-container" style="margin-top:80px" id="welcome">
-<h1 class="w3-xxxlarge" style="color: #bc002d;font-weight: bold">ようこそ　Welcome<br>Bienvenue　Willkommen</h1>
-<hr style="border:1px solid #bc002d;" class="w3-round">
-    <p style="text-align: right;font-weight: bold"><a href="../../index.html#welcome" style="text-decoration: none; color: rgb(1, 33, 105); text-align: right">English</a></p>
-<div class="w3-row-padding"></div>
-    <img src="../images/Letter%20Head%202018%20Dec_part1.svg"><img src="../images/Letter%20Head%202018%20Dec_part2.svg"><img src="../images/Letter%20Head%202018%20Dec_part3.svg">
-    
-<!-- Text start-->
-    <p style="padding-top: 22px">私たちはイギリスのバーミンガム在住の2名から成る翻訳チームです。自身の母国語であるか、何十年も勉強を続けて身につけた4つの言語（<span style="font-weight: bold">英語</span>、<span style="font-weight: bold">フランス語</span>、<span style="font-weight: bold">ドイツ語</span>、<span style="font-weight: bold">日本語</span>）を専門にしています。お客様とこれらの言語を使う国のサプライヤー／ディストリビューター／カスタマーとのコミュニケーションのお役に立つことが私たちの願いであり、目的です。</p>
-    <p>言語でのサービスに加え、私たちはDTPも行いますので、英語、フランス語、ドイツ語圏での輸出入などに携わる企業のお客様には、ワンストップでのサービスをご利用いただけます。例えば、海外市場向けの英文の製品パンフレットが必要な場合、日本語のテキストとデザインを送っていただけば、英訳された文章がレイアウトされた印刷／ウェブ用の高精度のデータ（PDFなど）をお届けすることができます。</p>
-    <p>私たちの提供するサービスの詳細と料金、これまでの仕事のサンプル、サービスにご満足いただけたお客様からのお言葉は、この先でご紹介いたします</p>
-  
-<!-- Text end-->
-<!-- Welcome End -->  
-    
-
-     <!-- Translation Start --> 
-      <div class="w3-container" style="margin-top:80px" id="translation"></div>
-        <h1 class="w3-xxxlarge w3-text-red" style="font-weight: bold">翻訳</h1>
-    <hr style="border:2px solid #bc002d;" class="w3-round">
-      <p style="text-align: right;font-weight: bold"><a href="../../index.html#translation" style="text-decoration: none; color: rgb(1, 33, 105); text-align: right">English</a></p>
-    
-  <!-- Photo grid (modal) -->
-  <div class="w3-row-padding"></div>
-               <img src="../images/FRANCE.svg"> <img src="../images/GERMANY.svg"style="padding:16px" ><br>
-    
-    <!-- Text Start --> 
-      <p style="font-weight: bold">フランス語／ドイツ語→英語</p>
-      <p>ドイツとフランスは、それぞれ<a href="http://databank.worldbank.org/data/download/GDP.pdf" target="_blank" style="font-weight: bold">GDP世界第4位と第7位という経済大国</a>であり、ヨーロッパのフランス語圏およびドイツ語圏（上記2国の他にオーストリア、ベルギー、リヒテンシュタイン、ルクセンブルク、モナコ、スイスがあります）とイギリスとの貿易額は、2016年には<a href="https://www.ons.gov.uk/businessindustryandtrade/internationaltrade/articles/whodoestheuktradewith/2017-02-21" target="_blank" style="font-weight: bold">約2800億ポンド</a>（約41兆5600億円）にも上りました。今後数年のうちにイギリスとEUの関係がどのように変わろうとも、これらの国がイギリスの主要貿易相手国であることに変化はないでしょう。つまり、操作マニュアル、契約書、技術論文、マーケティング資料、製品情報、企業ウェブサイトなどのあらゆるものを「英語に翻訳する必要」が、これからもあるということです。</p>
-      <p>私たちはフランス語／ドイツ語→英語の翻訳では、鉄道技術、HVAC、産業機械、建設車両、林業、管理者訓練、レジャーと観光をはじめとする多くの分野を手がけてきました。英語→フランス語／ドイツ語の翻訳が必要な場合でも、信頼できる長年の友人である翻訳者に依頼することが可能ですので、お気軽にご相談ください。</p><br>
-      <img src="../images/Japan.svg" >  <br><br>
-      <p style="font-weight: bold">英語→日本語および日本語→英語</p>
-      <p>2020年の東京オリンピックを控え、「日出づる国」日本にはまもなく世界の注目が集まることでしょう。GDP世界第3位の経済大国である日本とイギリスとの2016年の貿易額は約290億ポンド（約4兆3千億円）でした。貴社はイギリスでのビジネスパートナーをお探しではありませんか。海外のサプライヤー／ディストリビューター／カスタマーとのコミュニケーションにお困りでしたら、どうぞ私たちにご相談ください。</p>
-      <p>私たちが手がけました翻訳プロジェクトは、製薬企業のマーケティング、消防士の訓練、有毒廃棄物の処理、ホームオーディオシステムなど多岐にわたり、ほぼあらゆる分野を網羅しています。英語→日本語の翻訳では、日本語を母国語とする者がまず翻訳を行い、英語を母国語とする者が翻訳文と原文との整合性をチェックします。日本語→英語の翻訳では、英語を母国語とする者がまず翻訳を行い、日本語を母国語とする者が翻訳文と原文との整合性をチェックします。この厳格な品質管理を全プロジェクトに行うことによって、私たちが提供する翻訳は正確かつ完全であるとともに、ネイティブスピーカーの書いた文章なので自然な言葉遣いであることも保証されるのです。</p>
-    <!-- Text end -->    
-    
-    <!-- Translation Samples -->
-  <img src="../images/SDL_Trados_Studio_Web_Icons_013_70_3.svg">
-    <br> 
-      <p style="font-weight: bold;">翻訳サンプル</p>
-      <p>サンプルをご覧になるには、サムネイルをクリックしてください。</p>
-
-   <div class="row">
-    <div class="col-sm-4">
-      <div class="thumbnail">          
-        <a href="../translation_samples/german-english_medicine.jpg" target="_blank" >         
-            <div class="w3-container w3-hover-grey">
-          <div class="caption">
-            <p style="font-weight: bold;text-align: center">ドイツ語→英語：<br>医学</p>
-              </div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <a href="../translation_samples/german-english_marketing.jpg" target="_blank">
-         <div class="w3-container w3-hover-grey">
-          <div class="caption">
-            <p style="font-weight: bold;text-align: center">ドイツ語→英語：<br>マーケティング</p>
-              </div>
-          </div>
-        </a>
-   </div>
-              </div>
-        <div class="col-sm-4">
-      <div class="thumbnail">
-        <a href="../translation_samples/german-english_msds.jpg" target="_blank">
-                     <div class="w3-container w3-hover-grey">
-            <div class="caption">
-                      <p style="font-weight: bold;text-align: center">ドイツ語→英語：<br>MSDS</p>
-                        </div>
-          </div>
-        </a>
-   </div>
-     </div>
-         <div class="col-sm-4">
-      <div class="thumbnail">
-        <a href="../translation_samples/japanese-english_medicine-1.pdf" target="_blank">
-            <div class="w3-container w3-hover-grey">
-           <div class="caption">
-              <p style="font-weight: bold;text-align: center">日本語→英語：<br>医学 (1)</p>
-                </div>
-          </div>
-        </a>
-   </div>
-              </div>
-        <div class="col-sm-4">
-      <div class="thumbnail">
-        <a href="../translation_samples/japanese-english_medicine-2.pdf" target="_blank">
-          <div class="w3-container w3-hover-grey">
-           <div class="caption">
-              <p style="font-weight: bold;text-align: center">日本語→英語：<br>医学 (2)</p>
-              </div>
-          </div>
-        </a>
-   </div>
-     </div>
-               <div class="col-sm-4">
-      <div class="thumbnail">
-        <a href="../translation_samples/japanese-english_msds.jpg" target="_blank">
-           <div class="w3-container w3-hover-grey">
-           <div class="caption">
-              <p style="font-weight: bold;text-align: center">日本語→英語：<br>MSDS</p>
-               </div>
-          </div>
-        </a>
-   </div>
-     </div>
-        <div class="col-sm-4">
-      <div class="thumbnail">
-        <a href="../translation_samples/japanese-english_recipe.jpg" target="_blank">
-         <div class="w3-container w3-hover-grey">
-           <div class="caption">
-              <p style="font-weight: bold;text-align: center">日本語→英語：<br>レシピ</p>
-             </div>
-          </div>
-        </a>
-   </div>
-     </div>
-       <div class="col-sm-4">
-      <div class="thumbnail">
-        <a href="../translation_samples/english-japanese_literature.jpg" target="_blank">
-            <div class="w3-container w3-hover-grey">
-           <div class="caption">
-              <p style="font-weight: bold;text-align: center">日本語→英語：<br>文学</p>
-                </div>
-          </div>
-        </a>
-   </div>
-     </div>
-        <div class="col-sm-4">
-      <div class="thumbnail">
-        <a href="../translation_samples/japanese-english_business.pdf" target="_blank">
-            <div class="w3-container w3-hover-grey">
-           <div class="caption">
-              <p style="font-weight: bold;text-align: center">日本語→英語：<br>ビジネス</p>
-                </div>
-          </div>
-        </a>
-   </div>
-     </div>
-       <div class="col-sm-4">
-      <div class="thumbnail">
-        <a href="../translation_samples/english-japanese_literature.jpg" target="_blank">
-          <div class="w3-container w3-hover-grey">
-           <div class="caption" >
-              <p style="font-weight: bold;text-align: center">英語→日本語：<br>文学</p>
-              </div>
-          </div>
-        </a>
-   </div>
-              </div>
-         <div class="col-sm-4">
-      <div class="thumbnail">
-        <a href="../translation_samples/english-japanese_tourism.pdf" target="_blank">
-          <div class="w3-container w3-hover-grey">
-           <div class="caption">
-              <p style="font-weight: bold; text-align: center">英語→日本語：<br>観光</p>
-              </div>
-          </div>
-        </a>
-   </div>
-              </div>
-         </div>
-<!-- Samples and -->
-<!-- Translation End -->    
-    
-<!-- Desktop Publishing and Other Services -->
-  <div class="w3-container" id="desktop-publishing-and-other-services" style="margin-top:75px"></div>
-    <h1 class="w3-xxxlarge w3-text-red; font-weight: bold">DTP／その他のサービス</h1>
-          <hr style="border:2px solid #bc002d;" class="w3-round">
-          <p style="text-align: right;font-weight: bold"><a href="../../index.html#desktop-publishing-and-other-services" style="text-decoration: none; color: rgb(1, 33, 105); text-align: right">English</a></p>
-      <img src="../images/CC_connected_marketing_badge_blk2.svg"><br><br>
-    
-<!-- Text Start --> 
-<!-- Desktop Publishing --> 
-    <p style="font-weight: bold">DTP</p>
-    <p>海外マーケット用の製品パンフレットが必要ですか？私たちにおまかせいただければ、翻訳から印刷／ウェブデータ作成までワンストップでご提供できます。</p>
-    <p>私たちは、世界トップクラスのデザインツールであるAdobe Creative Cloudを用いて、日本語、英語、フランス語、ドイツ語のテキストのレイアウトを行っています。元の言語の印刷／ウェブ用データをお持ちでなくとも、テキストデータとデザインを送っていただけば、後の作業は私たちが行い、印刷／ウェブ用のデータ（PDFなど）を納品いたします。</p>
-    <p>既に翻訳済みのテキスト、レイアウトデータをお持ちで、単に言語の入れ替えだけをお望みの場合も、その言語の知識のある者が作業を行えば、入れ替えでの間違いを防ぐことができますので、どうぞ私たちにおまかせください。</p>
-    <br>  <img src="../images/Edit.svg">
-        
-<!-- Editing and Writing -->
-    <br><br><p style="font-weight: bold">編集／ライティング</p>
-    <p>いい文章を書くには、細かな点まで注意を払えるように、静かな環境で時間をかけて行う必要がありますが、忙しいビジネスパーソンの方々には難しいことでしょう。<p>
-    <p>会議の合間／空港での待ち時間／お昼休みに、レポートやプレゼンテーション資料をあわてて作成していませんか？それが変換ミスなどを見落とす理由ではありませんか？</p>
-    <p>忙しくて十分に時間のとれない方は、誤字脱字や文法間違いのチェック、より簡潔で効果的な言葉遣いの提案、参考文献リストの作成などの編集作業を私たちにまかせてはいかがでしょう。また、お客さまの指示に従っての英語または日本語の文章のライティング、さらに、お客さま提供の資料を基にしたレポート作成もお引き受けいたします。*<br>
-        
- <footer><p>*学生の方へ：私たちは学校／大学の課題である作文／論文の代筆はお受けしません</p></footer><br>
-<!-- Text end -->  
-    
-    <!-- Our DTP Samples -->
-<p style="font-weight: bold">DTPサンプル</p>
-    <p>画像は、お客様の許可を得て掲載しております。サムネイルをクリックすると、大きな画像が表示されます。</p>
-   <div class="row">
-        <div class="col-sm-4">
-      <div class="thumbnail">
-        <a href="../DTP_samples/exhibition_poster.jpg" target="_blank">
-          <img src="../DTP_samples/exhibition_poster.jpg" alt="Exhibition_Poster" style="width:100%" class="w3-hover-grayscale">
-            <div class="w3-container w3-hover-grey">
-             <div class="caption">
-            <p class="w3-medium" style="font-weight: bold;text-align: center">展示会ポスター</p>
-                </div>
-          </div>
-        </a>
-   </div>
-              </div> 
-       <div class="col-sm-4">
-      <div class="thumbnail">
-        <a href="../DTP_samples/exhibition_flyer-ticket.jpg" target="_blank">
-                  <img src="../DTP_samples/exhibition_flyer-ticket.jpg" alt="Exhibition Flyer & Ticket" style="width:100%" class="w3-hover-grayscale"> 
-            <div class="w3-container w3-hover-grey">
-             <div class="caption">
-            <p class="w3-medium" style="font-weight: bold;text-align: center">展示会チラシ＋チケット</p>
-                </div>
-          </div>
-        </a>
-      </div>
-    </div>  
-       <div class="col-sm-4">
-      <div class="thumbnail">
-        <a href="../DTP_samples/sample_business_card-new.jpg" target="_blank">
-          <img src="../DTP_samples/sample_business_card-new.jpg" alt="Sample Business card new" style="width:100%"  class="w3-hover-grayscale">
-            <div class="w3-container w3-hover-grey">
-            <div class="caption">
-            <p class="w3-medium" style="font-weight: bold;text-align: center">名刺サンプル</p>
-                </div>
-          </div>
-        </a>
-   </div>
-              </div>      
-      </div>
-<!-- Samples end -->
-<!-- Desktop Publishing and Other Services End-->
-    
-<!-- How We Work Start-->
-<div class="w3-container" style="margin-top:75px" id="how-we-work"></div>
-<h1 class="w3-xxxlarge w3-text-red" style="font-weight: bold">M&Yの作業プロセス</h1>
-<hr style="border:2px solid #bc002d;" class="w3-round">
-<p style="text-align: right;font-weight: bold"><a href="../../index.html#how-we-work" style="text-decoration: none; color: rgb(1, 33, 105); text-align: right">English</a></p>
-    <img src="../images/Work.svg"><br><br>
-    
-<!-- Text start-->    
-    <p>プロの翻訳家として、私たちは決して母国語ではない言語への翻訳はいたしません。つまり、イギリス人で英語が母国語であるマイケルは、フランス語／ドイツ語／日本語から英語への翻訳のみを、同様に、日本人で日本語が母国語である佳子は、英語から日本語への翻訳のみを行い、第二言語への翻訳は行いません。このポリシーは翻訳業界のベストプラクティスと一致したものです。</p>
-    <p>私たちは、辞書に載っていない高度な専門用語を含む文書の翻訳のご依頼をよく受けます。この場合、その分野の翻訳対象言語の専門的な技術文書を参照する必要があります。そのような資料がインターネットの一般公開部分では見つからないときも、他の多くのフリーランス翻訳者と異なり、私たちはまだ他にリソースを持ちます。科学技術のあらゆる分野における最新の学術論文を参照することが可能な大学図書館のデータにアクセスすることができるのです。専門文献の参照は時間がかかるものですが、専門用語を正しく翻訳するためには避けて通れない道で、私たちはその努力を惜しみません。</p>
-    <p>私たちがお客さまの会社のホームページの翻訳を行う場合、言葉の意味を正確に訳すことはもちろん、それに加えて、ページの訪問者に好感やインパクトをもたらして取引につながるように、翻訳対象言語での最適なスタイルやトーンを選びます。そのため、納品期限まで時間を費やして翻訳の改善に努めます。翻訳と感じさせない自然な文章の作成、それが私たちの目標です。</p>
-    <p>ここでお願いしておきたいことがございます。私たちは原文に関する背景情報や説明をおうかがいすることがありますが、それは全て優れた翻訳を行うためですので、どうぞご理解いただき、ご回答をお願いいたします。</p>
-<!-- Text End -->  
-<!-- How We Work End-->     
-        
-<!-- Testimonials Start-->
-<div class="w3-container" id="testimonials" style="margin-top:75px"></div>
-<h1 class="w3-xxxlarge w3-text-red" style="font-weight: bold">お客様の声</h1>
-<hr style="border:2px solid #bc002d;" class="w3-round">
-<p style="text-align: right;font-weight: bold"><a href="../../index.html#testimonials" style="text-decoration: none; color: rgb(1, 33, 105); text-align: right">English</a></p>
-    <img src="../images/testimonials.svg"><br><br>
-    
-<!-- Text Start -->
-    <p style="font-weight: bold">私たちのサービスにご満足いただけたお客さまからのお言葉です。</p>
-<!-- Text End -->
-    
-<!-- Row of testimonials -->     
-<div class="row">
-    <div class="col-md-4">
-      <div class="thumbnail">
-          <div class="caption">
-<p class="w3-medium"><span style="font-style: italic">「M&Yには、日本在住の外国人の医療支援をしている当NPO団体で使用する重要な資料の翻訳を行ってもらいました。M&Yの英訳した問診票、日本の公的保険制度の説明書は、毎月の健康相談会で活躍しています。」</span></p>
-              <p class="w3-medium" style="font-weight: bold">— 外国人医療センター<br>
-              コーディネーター　起橋 美智子<br>
-                  <a href="https://npomica.jimdo.com/" target="_blank" style="font-weight: bold">https://npomica.jimdo.com/</a></p>
-                </div>
-                          <img src="../images/MICA%20120px.svg" style="width:50%" > 
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="thumbnail">
-         <div class="caption">
-        <p class="w3-medium"><span style="font-style: italic">「M&Yには、日本語／英語の翻訳、原稿の校訂、DTPに関して、長期に渡る大変な作業を行ってもらい、</span>Space to Breathe: Thoughts from a Japanese Garden（一息の間 - 日本庭園での思い）<span style="font-style: italic">という特別で、質の高いバイリンガルの本を制作することができました。M&Yによるレイアウト、文章の彩色、翻訳、校正は比類ないものです。M&Yのプロ意識と細部へのこだわりは賞賛しきれません。彼らがいなければ私たちの本を現在の姿にすることはできなかったでしょう。」</span></p>
-             <p class="w3-medium" style="font-weight: bold">— ピュアランド・パブリケーションズ<br>
-              ポーリーン＆マイトレヤ<br>
-        <a href="http://www.buddhamaitreya.co.uk/shop-1/space-to-breathe" target="_blank" style="font-weight: bold;word-wrap: break-word;">http://www.buddhamaitreya.co.uk/shop-1/space-to-breathe</a></p>
+        <!-- Close menu -->
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px;text-decoration:none">メニューを閉じる</a>
+        <div class="w3-container">
+            <a href="#welcome"><img src="../images/Logo%20for%20web%2014%20Sep.svg"></a>
         </div>
-      </div>
+        <!-- Close menu -->
+
+        <div class="w3-bar-block">
+            <a href="#welcome" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">ようこそ</a>
+            <a href="#translation" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">翻訳</a>
+            <a href="#desktop-publishing-and-other-services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">DTP／その他のサービス</a>
+            <a href="#how-we-work" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">M&Yの作業プロセス</a>
+            <a href="#testimonials" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">お客様の声</a>
+            <a href="#pricing-charges-payment" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">レート／料金／お支払い</a>
+            <a href="#act on specified" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">特定商取引法に基づく表示事項</a>
+            <a href="#about-us" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">M&Yについて</a>
+            <a href="#links" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">リンク</a>
+            <a href="#our-translation-blog" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">翻訳ブログ</a>
+            <a href="#privacy-policy" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">プライバシーポリシー</a>
+            <a href="#contact-us" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">お問い合わせ</a>
+        </div>
+    </nav>
+    <!-- Sidebar/menu end -->
+
+    <!-- Top menu on small screens -->
+    <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+        <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()" style="text-decoration:none">☰</a>
+        <span>M &amp;Y Translations</span>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:360px;margin-right:110px">
+
+        <!-- Welcome Start -->
+        <div class="w3-container" style="margin-top:80px" id="welcome">
+            <h1 class="w3-xxxlarge" style="color: #bc002d;font-weight: bold;text-align: center">ようこそ Welcome Bienvenue Willkommen</h1>
+            <hr style="border:1px solid #bc002d;" class="w3-round">
+            <p style="text-align: right;font-weight: bold"><a href="../../index.html#welcome" style="text-decoration: none; color: rgb(1, 33, 105); text-align: right">English</a></p>
+            <div class="w3-row-padding"></div>
+            <img src="../images/Letter%20Head%202018%20Dec_part1.svg"><img src="../images/Letter%20Head%202018%20Dec_part2.svg"><img src="../images/Letter%20Head%202018%20Dec_part3.svg">
+
+            <!-- Text start-->
+            <p style="padding-top: 22px">私たちはイギリスのバーミンガム在住の翻訳チームです。4つの言語（<span style="font-weight: bold">英語</span>、<span style="font-weight: bold">フランス語</span>、<span style="font-weight: bold">ドイツ語</span>、<span style="font-weight: bold">日本語</span>）を専門にし、お客様とこれらの言語を使う国のサプライヤー／ディストリビューター／カスタマーとのコミュニケーションのお役に立つことが私たちの願いであり、目的です。</p>
+
+            <p>私たちが得意とするのは言語だけではありません。DTPも行いますので、翻訳から印刷データ作成までのワンストップサービスをご利用いただけます。例えば、海外市場向けの英文の製品パンフレットが必要な場合、日本語のテキストとデザインを送っていただけば、英訳された文章がレイアウトされた印刷用高精度のデータ（PDFなど）をお届けいたします。</p>
+            <p>私たちの提供するサービスの詳細と料金、これまでの仕事のサンプル、サービスにご満足いただけたお客様からのお言葉は、この先でご紹介いたします</p>
+
+            <!-- Text end-->
+            <!-- Welcome End -->
+
+            <!-- Translation Start -->
+            <div class="w3-container" style="margin-top:80px" id="translation"></div>
+            <h1 class="w3-xxxlarge w3-text-red" style="font-weight: bold">翻訳</h1>
+            <hr style="border:2px solid #bc002d;" class="w3-round">
+            <p style="text-align: right;font-weight: bold"><a href="../../index.html#translation" style="text-decoration: none; color: rgb(1, 33, 105); text-align: right">English</a></p>
+
+            <!-- Photo grid (modal) -->
+            <div class="w3-row-padding"></div>
+            <img src="../images/FRANCE.svg"> <img src="../images/GERMANY.svg" style="padding:16px">
+            <br>
+
+            <!-- Text Start -->
+            <p style="font-weight: bold">フランス語／ドイツ語→英語</p>
+            <p>ヨーロッパのフランス語圏およびドイツ語圏とイギリスの貿易額は、2016年には約2800億ポンド<a href="https://www.ons.gov.uk/businessindustryandtrade/internationaltrade/articles/whodoestheuktradewith/2017-02-21" target="_blank" style="font-weight: bold">約2800億ポンド</a>（約41兆5600億円）にも上りました。今後数年のうちにイギリスとEUの関係がどのように変わろうとも、これらの国がイギリスの主要貿易相手国であることに変化はないでしょう。</p>
+            <p>私たちはフランス語／ドイツ語→英語の翻訳では、鉄道技術、HVAC、産業機械、建設車両、林業、レジャーと観光、管理者訓練をなど、多くの分野を手がけてきました。英語→フランス語／ドイツ語の翻訳が必要な場合でも、ヨーロッパ在住の信頼できる翻訳者に依頼することができますので、どうぞお気軽にご相談ください。</p>
+            <br>
+            <img src="../images/Japan.svg">
+            <br>
+            <br>
+            <p style="font-weight: bold">英語→日本語および日本語→英語</p>
+            <p>2020年の東京オリンピックを控え、「日出づる国」日本にはまもなく世界の注目が集まることでしょう。<span style="font-weight:bold"><a
+            href="http://databank.worldbank.org/data/download/GDP.pdf" target="_blank">GDP世界第3位の経済大国</a></span>GDP世界第3位の経済大国である日本とイギリスとの2016年の貿易額は<span style="font-weight:bold"><a
+            href="https://www.ons.gov.uk/businessindustryandtrade/internationaltrade/articles/whodoestheuktradewith/2017-02-21"
+            target="_blank">290億ポンド</a></span>290億ポンド（約4兆3千億円）にも上りました。海外のサプライヤー／ディストリビューター／カスタマーとのコミュニケーションにお困りでしたら、どうぞ私たちにご相談ください。</p>
+            <p>私たちが手がけました翻訳プロジェクトは、製薬企業のマーケティング、消防士の訓練、有毒廃棄物の処理、ホームオーディオシステムなど多岐にわたり、ほぼあらゆる分野を網羅しています。英語→日本語の翻訳では、日本語を母国語とする者がまず翻訳を行い、英語を母国語とする者が翻訳文と原文との整合性をチェックします。日本語→英語の翻訳では、英語を母国語とする者がまず翻訳を行い、日本語を母国語とする者が翻訳文と原文との整合性をチェックします。この厳格な品質管理を全プロジェクトに行うことによって、私たちが提供する翻訳は正確かつ完全であるとともに、ネイティブスピーカーの書いた文章なので自然な言葉遣いであることも保証されるのです。</p>
+            <!-- Text end -->
+
+            <!-- Translation Samples -->
+            <img src="../images/SDL_Trados_Studio_Web_Icons_013_70_3.svg">
+            <br>
+            <p style="font-weight: bold;">翻訳サンプル</p>
+            <p>サンプルをご覧になるには、サムネイルをクリックしてください。</p>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <a href="../translation_samples/german-english_medicine.jpg" target="_blank">
+                            <div class="w3-container w3-hover-grey">
+                                <div class="caption">
+                                    <p style="font-weight: bold;text-align: center">ドイツ語→英語：
+                                        <br>医学</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <a href="../translation_samples/german-english_marketing.jpg" target="_blank">
+                            <div class="w3-container w3-hover-grey">
+                                <div class="caption">
+                                    <p style="font-weight: bold;text-align: center">ドイツ語→英語：
+                                        <br>マーケティング</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <a href="../translation_samples/german-english_msds.jpg" target="_blank">
+                            <div class="w3-container w3-hover-grey">
+                                <div class="caption">
+                                    <p style="font-weight: bold;text-align: center">ドイツ語→英語：
+                                        <br>MSDS</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <a href="../translation_samples/japanese-english_medicine-1.pdf" target="_blank">
+                            <div class="w3-container w3-hover-grey">
+                                <div class="caption">
+                                    <p style="font-weight: bold;text-align: center">日本語→英語：
+                                        <br>医学 (1)</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <a href="../translation_samples/japanese-english_medicine-2.pdf" target="_blank">
+                            <div class="w3-container w3-hover-grey">
+                                <div class="caption">
+                                    <p style="font-weight: bold;text-align: center">日本語→英語：
+                                        <br>医学 (2)</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <a href="../translation_samples/japanese-english_msds.jpg" target="_blank">
+                            <div class="w3-container w3-hover-grey">
+                                <div class="caption">
+                                    <p style="font-weight: bold;text-align: center">日本語→英語：
+                                        <br>MSDS</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <a href="../translation_samples/japanese-english_recipe.jpg" target="_blank">
+                            <div class="w3-container w3-hover-grey">
+                                <div class="caption">
+                                    <p style="font-weight: bold;text-align: center">日本語→英語：
+                                        <br>レシピ</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <a href="../translation_samples/english-japanese_literature.jpg" target="_blank">
+                            <div class="w3-container w3-hover-grey">
+                                <div class="caption">
+                                    <p style="font-weight: bold;text-align: center">日本語→英語：
+                                        <br>文学</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <a href="../translation_samples/japanese-english_business.pdf" target="_blank">
+                            <div class="w3-container w3-hover-grey">
+                                <div class="caption">
+                                    <p style="font-weight: bold;text-align: center">日本語→英語：
+                                        <br>ビジネス</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <a href="../translation_samples/english-japanese_literature.jpg" target="_blank">
+                            <div class="w3-container w3-hover-grey">
+                                <div class="caption">
+                                    <p style="font-weight: bold;text-align: center">英語→日本語：
+                                        <br>文学</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <a href="../translation_samples/english-japanese_tourism.pdf" target="_blank">
+                            <div class="w3-container w3-hover-grey">
+                                <div class="caption">
+                                    <p style="font-weight: bold; text-align: center">英語→日本語：
+                                        <br>観光</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Samples and -->
+            <!-- Translation End -->
+
+            <!-- Desktop Publishing and Other Services -->
+            <div class="w3-container" id="desktop-publishing-and-other-services" style="margin-top:75px"></div>
+            <h1 class="w3-xxxlarge w3-text-red; font-weight: bold">DTP／その他のサービス</h1>
+            <hr style="border:2px solid #bc002d;" class="w3-round">
+            <p style="text-align: right;font-weight: bold"><a href="../../index.html#desktop-publishing-and-other-services" style="text-decoration: none; color: rgb(1, 33, 105); text-align: right">English</a></p>
+            <img src="../images/CC_connected_marketing_badge_blk2.svg">
+            <br>
+            <br>
+
+            <!-- Text Start -->
+            <!-- Desktop Publishing -->
+            <p style="font-weight: bold">DTP</p>
+            <p>海外マーケットに向けて、翻訳版の製品パンフレットなどが必要ですか？私たちにおまかせいただければ、翻訳から印刷用データ作成までワンストップでご提供できます。 DTPには世界トップクラスのデザインツールであるAdobe Creative Cloudを用います。元の言語の印刷用データをお持ちでなくとも、テキストデータとデザインを送っていただけば、こちらで印刷用データを作成いたします（デザインはドラフトPDFで確認していただけます）。 また、日本語、英語、フランス語、ドイツ語テキストのプロフェッショナルなレイアウトも行います。
+            </p>
+            <br> <img src="../images/Edit.svg">
+
+            <!-- Editing and Writing -->
+            <br>
+            <br>
+            <p style="font-weight: bold">編集／ライティング</p>
+            <p>
+                誤字脱字や文法間違いのチェック、参考文献リストの作成などの面倒なことをまかせる、より簡潔で効果的な言葉遣いのアドバイスを受けるなど、ビジネス文書を洗練されたものにするために必要なことに私たちのサービスをお使いにはいかがでしょうか。 お客様の指示に従った英語または日本語の文章のライティング、さらに、お客様提供の資料を基にしたレポート作成も、お引き受けいたします。*
+            </p>
+            <br>
+
+            <footer>
+                <p>*学生の方へ：私たちは学校／大学の課題である作文／論文の代筆はお受けしません</p>
+            </footer>
+            <br>
+            <!-- Text end -->
+
+            <!-- Our DTP Samples -->
+            <p style="font-weight: bold">DTPサンプル</p>
+            <p>画像は、お客様の許可を得て掲載しております。サムネイルをクリックすると、大きな画像が表示されます。</p>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <a href="../DTP_samples/exhibition_poster.jpg" target="_blank">
+                            <img src="../DTP_samples/exhibition_poster.jpg" alt="Exhibition_Poster" style="width:100%" class="w3-hover-grayscale">
+                            <div class="w3-container w3-hover-grey">
+                                <div class="caption">
+                                    <p class="w3-medium" style="font-weight: bold;text-align: center">展示会ポスター</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <a href="../DTP_samples/exhibition_flyer-ticket.jpg" target="_blank">
+                            <img src="../DTP_samples/exhibition_flyer-ticket.jpg" alt="Exhibition Flyer & Ticket" style="width:100%" class="w3-hover-grayscale">
+                            <div class="w3-container w3-hover-grey">
+                                <div class="caption">
+                                    <p class="w3-medium" style="font-weight: bold;text-align: center">展示会チラシ＋チケット</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <a href="../DTP_samples/sample_business_card-new.jpg" target="_blank">
+                            <img src="../DTP_samples/sample_business_card-new.jpg" alt="Sample Business card new" style="width:100%" class="w3-hover-grayscale">
+                            <div class="w3-container w3-hover-grey">
+                                <div class="caption">
+                                    <p class="w3-medium" style="font-weight: bold;text-align: center">名刺サンプル</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Samples end -->
+            <!-- Desktop Publishing and Other Services End-->
+
+            <!-- How We Work Start-->
+            <div class="w3-container" style="margin-top:75px" id="how-we-work"></div>
+            <h1 class="w3-xxxlarge w3-text-red" style="font-weight: bold">M&Yの作業プロセス</h1>
+            <hr style="border:2px solid #bc002d;" class="w3-round">
+            <p style="text-align: right;font-weight: bold"><a href="../../index.html#how-we-work" style="text-decoration: none; color: rgb(1, 33, 105); text-align: right">English</a></p>
+            <img src="../images/Work2.svg">
+            <br>
+            <br>
+
+            <!-- Text start-->
+            <p>翻訳業界のベストプラクティスを守ったプロの翻訳家として、私たちは決して自分たちの母国語ではない言語への翻訳はいたしません。</p>
+            <p>私たちは、辞書に載っていない高度な専門用語が含まれた文書の翻訳のご依頼をよく受けます。この場合、その分野の専門文書を調べる必要がありますが、他の多くのフリーランス翻訳者と異なり、私たちは大学図書館のデータにアクセスすることができるため、インターネットの一般公開部分では見られない科学技術の最新の学術論文を、あらゆる分野において参照することができます。</p>
+            <p>企業のウェブサイトの翻訳では、その企業こそ望む取引相手だと訪問者に思わせることが私たちの使命だと考えます。 原文と同じ説得力を持つ翻訳文の作成、それが私たちの目標です。
+            </p>
+            <p>私たちは優れた翻訳というものに対して、非常にこだわりをもって行っています。</p>
+            <!-- Text End -->
+            <!-- How We Work End-->
+
+            <!-- Testimonials Start-->
+            <div class="w3-container" id="testimonials" style="margin-top:75px"></div>
+            <h1 class="w3-xxxlarge w3-text-red" style="font-weight: bold">お客様の声</h1>
+            <hr style="border:2px solid #bc002d;" class="w3-round">
+            <p style="text-align: right;font-weight: bold"><a href="../../index.html#testimonials" style="text-decoration: none; color: rgb(1, 33, 105); text-align: right">English</a></p>
+            <img src="../images/testimonials.svg">
+            <br>
+            <br>
+
+            <!-- Text Start -->
+            <p style="font-weight: bold">私たちのサービスにご満足いただけたお客さまからのお言葉です。</p>
+            <!-- Text End -->
+
+            <!-- Row of testimonials -->
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <div class="caption">
+                            <p class="w3-medium"><span style="font-style: italic">「M&Yには、日本在住の外国人の医療支援をしている当NPO団体で使用する重要な資料の翻訳を行ってもらいました。M&Yの英訳した問診票、日本の公的保険制度の説明書は、毎月の健康相談会で活躍しています。」</span></p>
+                            <p class="w3-medium" style="font-weight: normal"> <a href="https://npomica.jimdo.com/" target="_blank" style="font-weight: normal;color:darkblue;">外国人医療センター</a>
+                                <br> コーディネーター　 </p> <img src="../images/MICA%20120px.svg" style="width:55%">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <div class="caption">
+                            <p class="w3-medium"><span style="font-style: italic">「M&Yは、当社が利用した英文和訳・和文英訳翻訳者のうちで、最高のチームです。彼らの翻訳は常に完全で、素晴らしい品質なのです。M&Yと共働するようになってもう数年になります。いつも完璧な翻訳を時間通りに納品してくれるので、信頼しています。」</span></p>
+                            <p class="w3-medium" style="font-weight: normal">
+                                <a href="http://www.buddhamaitreya.co.uk/shop-1/space-to-breathe" target="_blank" style="font-weight: normal;color:darkblue;word-wrap: break-word;">『一息の間 - 日本庭園での思い』</a>
+                                <br>著者</p>
+                            <br>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <div class="caption">
+                            <p class="w3-medium"><span style="font-style: italic">「M&Yには、日本在住の外国人の医療支援をしている当NPO団体で使用する重要な資料の翻訳を行ってもらいました。M&Yの英訳した問診票、日本の公的保険制度の説明書は、毎月の健康相談会で活躍しています。」</span></p>
+                            <p class="w3-medium" style="font-weight: normal"> <a href="http://www.eularis.com/en-gb/" target="_blank" style="font-weight: normal;color:darkblue;">ユーラリス社
+</a>
+                                <br> CEO　 </p> <img src="../images/EUL-Logo-inlineArtboard-480x80.svg" style="width:100%">
+                            <br>
+                            <br>
+                            <br>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <div class="caption" align="left">
+                            <p class="w3-medium"><span style="font-style: italic"> 「M&Y Translationsはプロフェッショナルで、取引相手として最も素晴らしい存在です。英文和訳・和文英訳は常に正確で、時間通りに納品されます。当社は5年以上M&Yを利用しており、皆さんにお勧めできます。数年来の勤勉な仕事ぶりに本当に感謝しています。」</span>
+                            </p>
+                            <p>
+                                <span style="font-style: italic;font-size: 14px"></span>
+                                <a href="https://letsbuygold.com//" target="_blank" style="word-wrap: break-word;"><span style="font-weight: normal;color:darkblue;">LBG Jewellers</span></a>
+                                <br> 取締役
+                            </p><img src="../images/LBG%20logo.svg" style="width:48%">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Row End -->
+
+            <p><a href="https://www.proz.com/profile/1343981" target="_blank" style="font-weight: bold">このページでは、</a>翻訳業界のお客様から11件の良い評価をいただいています（右上隅をご覧ください）。
+                <br>
+            </p>
+            <p>そして、<a href="https://www.peopleperhour.com/freelancer/michael-yoshiko/writing-translation-dtp/181977" target="_blank" style="font-weight: bold">こちらで</a>は個人のお客様から90件以上の良い評価をいただいています.
+                <br>
+            </p>
+            <!-- Testimonials End -->
+
+            <!-- Pricing, Charges & Payment Start-->
+            <div class="w3-container" id="pricing-charges-payment" style="margin-top:75px"></div>
+            <h1 class="w3-xxxlarge w3-text-red" style="font-weight: bold">レート／料金／お支払い</h1>
+            <hr style="border:2px solid #bc002d;" class="w3-round">
+            <p style="text-align: right;font-weight: bold"><a href="../../index.html#pricing-charges-payment" style="text-decoration: none; color: rgb(1, 33, 105); text-align: right">English</a></p>
+
+            <img src="../images/Currency.svg">
+            <br>
+            <br>
+            <!-- Text Start -->
+            <p style="font-weight: bold">翻訳料金の計算方法</p>
+            <p>申し訳ございませんが、私たちはページ数をお知らせいただくだけでは翻訳料金の見積もりをすることはできません。 きちんとした仕事する翻訳サービス提供者はどこでもそうなのですが、ご依頼をお受けできるか、および料金についてお答えするためには、まず原稿を拝見して、内容とワード数／文字数を確認させていただく必要があります。 原稿が編集不可能なPDFであっても、OCRをかけて編集可能なファイルにして文字カウントを行うことが私たちには可能です。また、同じ言葉が何度も使われている製品カタログなどを翻訳する場合には、繰り返し部分はディスカウントした公正な料金といたします。
+            </p>
+            <p>納期に関しましては、かかる時間を正確に（分単位などで）お答えするのは難しい場合があります。翻訳は、規格品の大量生産のように進められるものではなく、ご依頼ごとにかかる時間は変わります。見積もりの際には、必要な時間のおおよその予想をお伝えしますが、その後、変わる可能性があることをどうぞご了承ください（大幅に変わることはめったになく、その場合、すぐにご連絡いたします）。</p>
+            <br>
+            <p style="font-weight: bold">料金設定</p>
+            <p>以下は日本円での料金となっております。それ以外の通貨での見積もりをご希望の場合は、どうぞお問い合わせください。</p>
+            <div class="w3-container"></div>
+            <table class="w3-table-all">
+                <tr>
+                    <th>サービス</th>
+                    <th>料金</th>
+                    <th>備考</th>
+                </tr>
+                <tr>
+                    <td width="15%">英語→日本語の翻訳</td>
+                    <td width="20%">英語1ワードにつき、15円*</td>
+                    <td width="30%">料金には、ネイティブスピーカーの翻訳者によるチェックが含まれています</td>
+                </tr>
+                <tr>
+                    <td>日本語→英語の翻訳</td>
+                    <td>日本語1文字につき、12円</td>
+                    <td>料金には、ネイティブスピーカーの翻訳者によるチェックが含まれています</td>
+                </tr>
+                <tr>
+                    <td>フランス語→英語の翻訳</td>
+                    <td>フランス語1ワードにつき、11円*</td>
+                    <td>翻訳のみの料金となります（ネイティブスピーカーの翻訳者によるチェックは別料金でお受けできます）</td>
+                </tr>
+                <tr>
+                    <td>ドイツ語→英語の翻訳</td>
+                    <td>ドイツ語1ワードにつき、11円*</td>
+                    <td>翻訳のみの料金となります（ネイティブスピーカーの翻訳者によるチェックは別料金でお受けできます）</td>
+                </tr>
+                <tr>
+                    <td>英語→日本語の翻訳文の日本語ネイティブによるチェック</td>
+                    <td>英語1ワードにつき、6円</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>英語→フランス語の翻訳</td>
+                    <td></td>
+                    <td>料金はお問い合わせください</td>
+                </tr>
+                <tr>
+                    <td>英語→ドイツ語の翻訳</td>
+                    <td></td>
+                    <td>料金はお問い合わせください</td>
+                </tr>
+                <tr>
+                    <td>翻訳証明**</td>
+                    <td>650円</td>
+                </tr>
+                <tr>
+                    <td>英語が母国語でない人の作成した英文の英語ネイティブによるチェック</td>
+                    <td>英語1ワードにつき、6円</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>DTP</td>
+                    <td>作業内容によります</td>
+                    <td>料金はお問い合わせください</td>
+                </tr>
+                <tr>
+                    <td>英語でのコピーライティング／レポート作成</td>
+                    <td>英語500ワードにつき、5800円</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>日本語でのコピーライティング／レポート作成</td>
+                    <td>日本語1000文字につき、42ポンドまたは5500円</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>紙出力と郵送</td>
+                    <td>650円</td>
+                    <td>左記は最低料金となります</td>
+                </tr>
+                <tr>
+                    <td>1時間当たりの作業料金</td>
+                    <td>4000円</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>請求書の最小金額</td>
+                    <td>1300円</td>
+                    <td></td>
+                </tr>
+            </table>
+            <br/>
+            <!-- Table end -->
+
+            *このレートは、ワード数または文字数に基づくもので、繰り返し部分のディスカウントは反映されていません。
+            <p class="justified">**「翻訳証明」とは、翻訳文書に私たちの翻訳者としての資格を記載し、翻訳の日付を入れ、署名・捺印して、私たちが知りうる限り原文を正確かつ完全に翻訳したことを宣言・証明することです。</p>
+            <br>
+
+            <p style="text-align: left;font-weight: bold">お支払い方法</p>
+            <p>以下のお支払い方法をご利用いただけます。</p>
+            <ul class="b">
+                <li>日本の銀行口座への振り込み</li>
+                <li>イギリスの銀行口座への振り込み</li>
+                <li><img src="../images/pp-logo-100px.svg"></li>
+            </ul>
+            <p>（詳細は請求書の記載をご覧ください）</p>
+            <!-- Text End -->
+            <!-- Pricing, Charges and Payment End -->
+
+            <!-- Act on Specified Commercial Transactions start-->
+            <div class="w3-container" id="act on specified" style="margin-top:75px"></div>
+            <h1 class="w3-xxxlarge w3-text-red" style="font-weight: bold">特定商取引法に基づく表示事項</h1>
+            <hr style="border:2px solid #bc002d;" class="w3-round">
+
+            <!-- Text Start -->
+            <div class="w3-container">
+                <table class="w3-table">
+                    <tr>
+                        <td style="border: 1px solid transparent" width="20%">代表者</td>
+                        <td style="border: 1px solid transparent" width="60%">Michael Normoyle</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid transparent;">所在地</td>
+                        <td style="border: 1px solid transparent;">
+                          <span id="commercial-address"></span>
+                        </td>
+                        <td style="border: 1px solid transparent;">
+                          <button id="commercial-address-btn" class="commercial-transactions-btn w3-button w3-red w3-margin-bottom"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>電話番号</td>
+                        <td>
+                          <span id="commercial-telephone"></span>
+                        </td>
+                        <td>
+                          <button id="commercial-telephone-btn" class="commercial-transactions-btn w3-button w3-red w3-margin-bottom"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>電話受付時間</td>
+                        <td>9:00〜18:00（イギリス時間）</td>
+                    </tr>
+                    <tr>
+                        <td>メールアドレス</td>
+                        <td>
+                          <span id="commercial-email"></span>
+                        </td>
+                        <td>
+                          <button id="commercial-email-btn" class="commercial-transactions-btn w3-button w3-red w3-margin-bottom"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ホームページURL</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>料金</td>
+                        <td>「レート／料金／お支払い」ページをご覧ください</td>
+                    </tr>
+                    <tr>
+                        <td>料金以外の付帯費用</td>
+                        <td>郵送をご希望の方には送料を、代行電話をご希望の方には電話料金を、出張英語指導または通訳をご希望の方には交通費をご負担いただきます。</td>
+                    </tr>
+                    <tr>
+                        <td>お届け時期</td>
+                        <td>ご同意いただいた日、時間までに納品いたします。</td>
+                    </tr>
+                    <tr>
+                        <td>お支払いの時期・方法L</td>
+                        <td>「レート／料金／お支払い」ページをご覧ください</td>
+                    </tr>
+                    <tr>
+                        <td>キャンセル・交換・返金について</td>
+                        <td>サービスの性質上、納品後の返金には応じられません。万一、翻訳に瑕疵があれば無償で修正いたしますが、当方が瑕疵と認めた場合に限ります。DTPの場合、当方のミスによらない大幅な修正は、新たなご依頼となります。翻訳・DTPの成果物による間接的・付随的・派生的損害賠償責任は負いません。</td>
+                    </tr>
+                </table>
+                <br/>
+            </div>
+            <!-- Text End -->
+            <!-- Act on specified End -->
+
+            <!-- About Us Start-->
+            <div class="w3-container" id="about-us" style="margin-top:75px"></div>
+            <h1 class="w3-xxxlarge w3-text-red" style="font-weight: bold">M&Yについて</h1>
+            <hr style="border:2px solid #bc002d;" class="w3-round">
+            <p style="text-align: right;font-weight: bold"><a href="../../index.html#about-us" style="text-decoration: none; color: rgb(1, 33, 105); text-align: right">English</a></p>
+            <img src="../images/Logo2.svg">
+            <br>
+            <br>
+
+            <!-- Text Start -->
+            <p style="font-weight: bold">マイケル</p>
+            <p>M&Yの「M」、マイケルはイギリス英語のネイティブスピーカーです。9歳のときにフランス語を習い始めて以来、生涯のほとんどを言語の学習者、教育者、翻訳者として過ごしてきました。大学でドイツ語とフランス語を学んだ後、日本へ15年滞在し、日本語も身につけました。</p>
+            <p>マイケルの取得した資格には、ドイツ語およびフランス語の第1学位の学士号（レディング大学、イギリス）、外国語としての英語教授資格、日本語能力証明書、Child Speech and Language Difficulties大学院コース修了（シェフィールド大学、イギリス）、Communication上級教育修了（バーミンガムシティ大学、イギリス）などがあります。</p>
+            <p>2011年のM&Y Translationsの設立以来、何百件も翻訳プロジェクトを手がけましたが、中でも最も記憶に残っているものは、第一次世界大戦に従軍したフランスの音楽家が戦場から送った手紙の翻訳（フランス語→英語）で、ウェブサイト<a href="https://www.rncm.ac.uk/paris-manchester-1918/" target="_blank" style="font-weight: bold">https://www.rncm.ac.uk/paris-manchester-1918/</a>でご覧いただけます。</p>
+            <br>
+
+            <p style="font-weight: bold">佳子（よしこ）</p>
+            <p>M&Yの「Y」、佳子は日本の名古屋出身で、2010年からイギリスに住んでいます。取得した資格は、文学士号（南山大学で文化人類学専攻）、ケンブリッジ英検FCE、日本翻訳連盟ほんやく検定、DTPディレクターなどです。これまでに手がけたプロジェクトで思い出に残っているものは、翻訳ではDavid du Plessis作・画の絵本「<a href="https://www.waterstones.com/book/mister-king-s-incredible-journey/david-du-plessis/9781770079397" target="_blank" style="font-weight: bold">Mr King's Incredible Journey</a>（ミスター・キングの大冒険）」、DTPではポーリーン・ベル＆竹内耕司（Maitreya）作の「<a href="https://www.amazon.co.uk/Space-Breathe-Thoughts-Japanese-Garden/dp/0995564701" target="_blank" style="font-weight: bold">Space to Breathe: Thoughts from a Japanese Garden</a> 」です。芸術、文学、考古学、歴史（特に英国中世史）にとても興味があり、「Richard III Society」のメンバーです。</p>
+            <!-- Text End -->
+            <!-- About Us End -->
+
+            <!-- Links Start-->
+            <div class="w3-container" id="links" style="margin-top:75px"></div>
+            <h1 class="w3-xxxlarge w3-text-red" style="font-weight: bold">リンク</h1>
+            <hr style="border:1px solid #bc002d;" class="w3-round">
+            <p style="text-align: right;font-weight: bold"><a href="../../index.html#links" style="text-decoration: none; color: rgb(1, 33, 105); text-align: right">English</a></p>
+            <img src="../images/links.svg">
+
+            <!-- Text Start -->
+            <p style="font-weight: bold">工事中。お待ちください。</p>
+            <!-- Text End -->
+            <!-- Links End -->
+
+            <!-- Our Translation Blog Start-->
+            <div class="w3-container" id="our-translation-blog" style="margin-top:75px"></div>
+            <h1 class="w3-xxxlarge w3-text-red" style="font-weight: bold">翻訳ブログ</h1>
+            <hr style="border:2px solid #bc002d;" class="w3-round">
+            <p style="text-align: right;font-weight: bold"><a href="../../index.html#our-translation-blog" style="text-decoration: none; color: rgb(1, 33, 105); text-align: right">English</a></p>
+            <img src="../images/Blog.svg">
+            <br>
+            <br>
+
+            <!-- Text Start -->
+            <p style="font-weight: bold">言語・翻訳に関する話題の記事をお届けします…<a href="../blog_dummy_pages/our_translation_blog.html" target="_blank"> 工事中。お待ちください。</a></p>
+            <!-- Text End -->
+            <!-- Our Translation Blog End -->
+
+            <!-- Privacy Policy Start-->
+            <div class="w3-container" id="privacy-policy" style="margin-top:75px"></div>
+            <h1 class="w3-xxxlarge w3-text-red" style="font-weight: bold">プライバシーポリシー</h1>
+            <hr style="border:2px solid #bc002d;" class="w3-round">
+            <p style="text-align: right;font-weight: bold"><a href="../../index.html#privacy-policy" style="text-decoration: none; color: rgb(1, 33, 105); text-align: right">English</a></p>
+            <img src="../images/Privacy.svg">
+            <br>
+            <br>
+
+            <!-- Text Start -->
+
+            <p style="font-weight: bold">ポリシー</p>
+            <p class="justified">
+                本ポリシーは、ウェブサイト「m-and-ytranslations.com」に適用されます。本ウェブサイトは「M&Y Translations（以下「M&Y」）」によって運営されています。M&Yへの問い合わせは、この下の「お問い合わせ」セクションに記載された方法で行うことができます。本通知の目的は、利用者が本ウェブサイト、メール、電話などの手段によってM&Yに提供することを選択した個人情報に対するM&Yの処理の仕方について説明することです。本ウェブサイトの利用またはM&Yへの情報の提供によって、利用者は本プライバシーポリシーに同意することになります。 </p>
+            <br>
+
+            <p style="font-weight: bold">本ポリシー内の用語の定義</p>
+            <ul>
+                <li>「私たち」とは、M&Yおよびそのスタッフを示します。</li>
+                <li>「利用者」とは、本ウェブサイトを利用する個人または集団を示します。</li>
+                <li>「個人情報」とは、本ウェブサイト利用者の識別または利用者への連絡に用いることが可能なすべての情報を示し、名前、住所、電話番号、FAX番号、メールアドレス、勤務先、肩書、性別などが含まれますが、これに限定されません。</li>
+                <li>「GDPR」とは、EU一般データ保護規則（General Data Protection Regulation）のことです。</li>
+                <li>「EMS」とは、Eメール マーケティング サービス（Email Marketing Services）のことです。</li>
+                <li>「クッキー（Cookies）」とは、ウェブサイトから送られてユーザーのコンピュータなどのデバイスに保存される少量のファイルのことです。</li>
+            </ul>
+
+            <p style="font-weight: bold">利用者の個人情報の処理</p>
+            <p class="justified">
+                私たちは、利用者が求める情報、製品、サービスを提供するために、利用者の個人情報を処理します。処理に対する同意を利用者が撤回された日、または最後のサービス提供から6年経過した日のいずれか早い方の日まで、この情報の処理は継続されます。 信頼できる第三者に私たちの代わりに利用者にサービスを提供してもらう場合、それを行うために必要な情報がその第三者に開示されます。私たちに依頼を受ける第三者は、利用者の情報の保護と秘密保持を行う義務があります。私たちが依頼されたサービスの提供を第三者に行ってもらう場合、必ず利用者にお知らせします。EMSプロバイダーを利用する場合、私たちは利用者の個人情報のうちこのプロバイダーが必要とするものを開示することができます。法律で義務付けられていない限り、これ以外の第三者に利用者の情報を開示することはありません。
+            </p>
+            <br>
+
+            <p style="font-weight: bold">利用者の権利</p>
+            <p class="justified">
+                利用者の権利 GDPRの下、私たちが保有している利用者に関する情報の複製を要求する権利が利用者にはあります。この権利を行使される場合は、この下の「お問い合わせ」セクションに記載されているアドレスへメールでご請求ください。利用者は、私たちが保有している個人情報の削除または訂正を求めることもできます。私たちによる情報に対する処理に問題があると思われた場合、Information Commissioner’s Office（www.ico.org.uk）に異議を申し立てる権利も利用者にはあります。
+            </p>
+            <br>
+
+            <p style="font-weight: bold">クッキー（Cookies）</p>
+            <p class="justified">
+                本ウェブサイトは、現在クッキーを使用していません。
+            </p>
+            <br>
+
+            <p style="font-weight: bold">データセキュリティと保護</p>
+            <p class="justified">
+                利用者の個人情報は、アクセスする権利のない人に漏洩しないように、あらゆる合理的措置をとって安全に保存されます。
+            </p>
+            <br>
+
+            <p style="font-weight: bold">外部ウェブサイトへのリンク</p>
+            <p class="justified">
+                本ウェブサイトには、この他のウェブサイトへのリンクが掲載されています。本ウェブサイトから移動されますと、本プライバシーポリシーは適用されなくなり、訪問先ウェブサイトのプライバシーポリシーが適用されるますのでご留意ください。
+            </p>
+            <br>
+
+            <p style="font-weight: bold">Eメール マーケティングメッセージと購読</p>
+            <p class="justified">
+                GDPRの下、私たちが作成するニュースレターの購読者または私たちが作成するマーケティングメールリストの掲載者に属する情報を私たちは処理することができます。また、EMSを利用してEメール マーケティング メッセージを送ることができます。利用者には、私たちのマーケティング目的での接触をいつでも停止させる権利があります。
+            </p>
+            <br>
+
+            <p style="font-weight: bold">本ポリシーの変更</p>
+            <p class="justified">
+                私たちは、本ポリシーを変更する権利を留保します。更新につきましては、どうぞ適時ご確認ください。本ポリシーの最終更新日：2019年10月3日
+            </p>
+            <!-- Text End -->
+
+            <!-- Privacy Policy End -->
+
+            <!-- Contact Us Start-->
+            <div class="w3-container" id="contact-us" style="margin-top:75px"></div>
+            <h1 class="w3-xxxlarge w3-text-red" style="font-weight: bold">お問い合わせ</h1>
+            <hr style="border:2px solid #bc002d;" class="w3-round">
+            <p style="text-align: right;font-weight: bold"><a href="../../index.html#contact-us" style="text-decoration: none; color: rgb(1, 33, 105); text-align: right">English</a></p>
+
+            <!-- Send email icon -->
+            <div class="send-email-icon-container" style="text-align: center">
+                <a href="mailto:m.and.y.translations@gmail.com" title="私たちにメールを送って">
+                    <img src="../images/Contact.svg">
+                    <!-- <div class="overlay"></div> -->
+                </a>
+            </div>
+            <br>
+            <br>
+
+            <!-- Text Start -->
+            <p>翻訳、DTP、その他のプロジェクトについて、どうぞお気軽にご相談ください。お問い合わせには下のフォームをご利用いただけます。</p>
+            <!-- Text End -->
+
+            <!-- Form Start -->
+            <form action="/action_page.php" target="_blank" class="font-small">
+                <div class="w3-section">
+                    <label for="fullName">氏名</label>
+                    <input class="w3-input w3-border" type="text" name="fullName" id="fullName" required>
+                </div>
+
+                <div class="w3-section">
+                    <label for="email">メールアドレス</label>
+                    <input class="w3-input w3-border" type="text" name="email" id="email" required>
+                </div>
+
+                <div class="w3-section">
+                    <label for="message">メッセージ</label>
+                    <textarea rows="7" style="overflow:auto;resize:none" class="w3-input w3-border" type="text" name="message" id="message" required></textarea>
+                </div>
+
+                <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">
+                    メッセージ送信
+                </button>
+
+            </form>
+            <!-- Form End -->
+            <br>
+
+            <!-- Upload button start-->
+            <p class="font-small">
+                翻訳／DTPの見積もりのためにファイルをお送りいただける場合、「参照」ボタンをクリックするとアップロードを行うことができます。
+            </p>
+            <!-- <input type="file" id="myFile"> -->
+            <script>
+                function myFunction() {var x = document.getElementById("myFile"); x.disabled = true; }
+            </script>
+            <input type="button" id="loadFileXml" value="ブラウズ" onclick="document.getElementById('myFile').click();"/>
+            <input type="file" style="display:none;" id="myFile" name="file" />
+            <br>
+            <!-- Upload button end-->
+
+            <div style="text-align:center">
+                <br>
+                <p class="w3-large" style="font-weight: bold">ご相談・お問い合わせをお待ちしております。</p>
+                <p> M&Y Translations</p>
+                <div class="contact-details" id="contact-details">
+                    <p style="color:teal;">
+                        <span id="contact-office-address"></span>
+                        <br>
+                        <span id="contact-email-address"></span>
+                        <br>
+                        <span id="contact-telephone-number"></span>
+                        <br>
+                    </p>
+                </div>
+                <button id="contact-details-btn" class="contact-details-btn w3-button w3-red w3-margin-bottom"></button>
+            </div>
+            <br>
+
+            <!-- Contact Us End-->
+
+        </div>
     </div>
-    </div>
-<!-- Row End -->
-    
-<p>このページでは、翻訳業界のお客様から10件の良い評価をいただいています（右上隅をご覧ください）：<br>
-    <a href="https://www.proz.com/profile/1343981" target="_blank" style="font-weight: bold">https://www.proz.com/profile/1343981</a></p>
-    <p>そして、こちらでは個人のお客様から70件以上の良い評価をいただいています：<br>
-<a href="https://www.peopleperhour.com/freelancer/michael-yoshiko/writing-translation-dtp/181977" target="_blank" style="font-weight: bold">https://www.peopleperhour.com/freelancer/michael-yoshiko/writing-translation-dtp/181977</a></p>
-<!-- Testimonials End -->
-     
-<!-- Pricing, Charges & Payment Start-->
-<div class="w3-container" id="pricing-charges-payment" style="margin-top:75px"></div>
-    <h1 class="w3-xxxlarge w3-text-red" style="font-weight: bold">レート／料金／お支払い</h1>
-    <hr style="border:2px solid #bc002d;" class="w3-round">
-    <p style="text-align: right;font-weight: bold"><a href="../../index.html#pricing-charges-payment" style="text-decoration: none; color: rgb(1, 33, 105); text-align: right">English</a></p>
-    
- <img src="../images/Currency.svg"><br><br>
-<!-- Text Start -->
-    <p style="font-weight: bold">翻訳料金の計算方法</p>
-    <p>申し訳ございませんが、私たちはページ数をお知らせいただくだけでは翻訳料金の見積もりをすることはできません（原稿の内容や量などの詳細も聞かずに料金と納期を答えられるのは、Google翻訳を使うだけの自称翻訳家ぐらいです）。きちんとした仕事する翻訳家ならば、納期の見積もりにはワード数（英語／フランス語／ドイツ語）または文字数（日本語）が重要な情報なのですが、それはページ数からだけでは分かりません。</p>
-    <p>私たちがご依頼をお受けできるか、および料金についてお答えするためには、まず原稿を拝見して、内容とワード数／文字数を確認させていただく必要があります。原稿が編集不可能な（文字カウントのできない）PDFなどであっても、OCRをかけて編集可能なファイルにして文字カウントを行うことが私たちには可能です。</p>
-    <p>また、同じ言葉が何度も使われている製品カタログなどを翻訳する場合には、繰り返し部分はディスカウントした公正な料金といたします。私たちの使用するSDL Trados Studioという翻訳支援ソフトウェア（機械翻訳ではありません）には文章の分析機能がありますので、それによって繰り返しなどのワード数／文字数は正確に把握され、料金に反映させることができるのです。</p>
-    <p>納期に関しましては、かかる時間を正確に（分単位などで）お答えするのは難しい場合があります。翻訳は、規格品の大量生産のように進められるものではなく、ご依頼ごとにかかる時間は変わります。見積もりの際には、必要な時間のおおよその予想をお伝えしますが、その後、変わる可能性があることをどうぞご了承ください（大幅に変わることはめったになく、その場合、すぐにご連絡いたします）。</p><br>
-    <p style="font-weight: bold">料金設定</p>
-    <p>以下は日本円での料金となっております。それ以外の通貨での見積もりをご希望の場合は、どうぞお問い合わせください。</p>
-    <div class="w3-container"></div>
-      <table class="w3-table-all">
-           <tr>
-      <th>サービス</th>
-      <th>料金</th>
-         <th>備考</th>      
-    </tr>
-           <tr>
-      <td width="15%">英語→日本語の翻訳</td>
-      <td width="20%">英語1ワードにつき、XX円</td>
-      <td width="30%">料金には、ネイティブスピーカーの翻訳者によるチェックが含まれています</td>
-    </tr>
-    <tr>
-      <td>日本語→英語の翻訳</td>
-      <td>日本語1文字につき、XX円</td>
-      <td>料金には、ネイティブスピーカーの翻訳者によるチェックが含まれています</td>
-    </tr>
-    <tr>
-      <td>フランス語→英語の翻訳</td>
-      <td>フランス語1ワードにつき、XX円</td>
-      <td>翻訳のみの料金となります（ネイティブスピーカーの翻訳者によるチェックは別料金でお受けできます）</td>
-    </tr>
-           <tr>
-      <td>ドイツ語→英語の翻訳</td>
-      <td>ドイツ語1ワードにつき、XX円</td>
-      <td>翻訳のみの料金となります（ネイティブスピーカーの翻訳者によるチェックは別料金でお受けできます）</td>
-    </tr>
-          <tr>
-               <td>英語→日本語の翻訳文の日本語ネイティブによるチェック</td>
-               <td>英語1ワードにつき、XX円</td>
-               <td></td>
-           </tr>
-       <tr>  
-    <td>英語→フランス語の翻訳</td>
-      <td></td>
-      <td>料金はお問い合わせください</td>
-    </tr>    
-            <tr>
-      <td>英語→ドイツ語の翻訳</td>
-      <td></td>
-      <td>料金はお問い合わせください</td>
-    </tr>    
-          <tr>
-              <td>翻訳証明</td>
-          <td>XX円</td>
-          <td>「翻訳証明」の説明は、下をご覧ください</td></tr>
-           <tr>
-              <td>英語が母国語でない人の作成した英文の英語ネイティブによるチェック</td>
-          <td>英語1ワードにつき、XX円</td>
-          <td></td>
-          </tr>
-          <tr>
-    <td>DTP</td>
-              <td>作業内容によります</td>
-              <td>料金はお問い合わせください</td>
-              </tr>
-          <tr>
-          <td>英語でのコピーライティング／レポート作成</td>
-          <td>英語500ワードにつき、XX円</td>
-              <td></td>
-          </tr>
-          <tr>
-              <td>日本語でのコピーライティング／レポート作成</td>
-          <td>日本語1000文字につき、XXXX円</td>
-              <td></td>
-          </tr>
-          <tr>
-          <td>紙出力と郵送</td>
-              <td>XX円</td>
-              <td>左記は最低料金となります</td>
-          </tr>
-          <tr>
-          <td>1時間当たりの作業料金</td>
-          <td>XX円</td>
-          <td></td>
-          </tr>
-          <tr>
-              <td>請求書の最小金額</td>
-          <td>XX円</td>
-          <td></td>
-          </tr>  
-    </table><br/>
-<!-- Table end -->    
-    
-    <p style="text-align: left;font-weight: bold">お支払い方法</p>
-    <p>以下のお支払い方法をご利用いただけます。</p>
-    <ul class="b">
-      <li>日本の銀行口座への振り込み</li>
-      <li>イギリスの銀行口座への振り込み</li>
-      <li><img src="../images/pp-logo-100px.svg"></li>
-    </ul>
-    <p>（詳細は請求書の記載をご覧ください）</p>
-<!-- Text End -->   
-  <!-- Pricing, Charges and Payment End -->
-        
-<!-- About Us Start-->
-      <div class="w3-container" id="about-us" style="margin-top:75px"></div>
-    <h1 class="w3-xxxlarge w3-text-red" style="font-weight: bold">M&Yについて</h1>
-          <hr style="border:2px solid #bc002d;" class="w3-round">
-    <p style="text-align: right;font-weight: bold"><a href="../../index.html#about-us" style="text-decoration: none; color: rgb(1, 33, 105); text-align: right">English</a></p>
-       <img src="../images/Logo2.svg"><br><br>
 
- <!-- Text Start -->        
-    <p style="font-weight: bold">マイケル</p>
-    <p>M&Yの「M」、マイケルはイギリス英語のネイティブスピーカーです。9歳のときにフランス語を習い始めて以来、生涯のほとんどを言語の学習者、教育者、翻訳者として過ごしてきました。大学でドイツ語とフランス語を学んだ後、日本へ15年滞在し、日本語も身につけました。</p>
-    <p>マイケルの取得した資格には、ドイツ語およびフランス語の第1学位の学士号（レディング大学、イギリス）、外国語としての英語教授資格、日本語能力証明書、Child Speech and Language Difficulties大学院コース修了（シェフィールド大学、イギリス）、Communication上級教育修了（バーミンガムシティ大学、イギリス）などがあります。</p>
-    <p>2011年のM&Y Translationsの設立以来、何百件も翻訳プロジェクトを手がけましたが、中でも最も記憶に残っているものは、第一次世界大戦に従軍したフランスの音楽家が戦場から送った手紙の翻訳（フランス語→英語）で、ウェブサイト<a href="https://www.rncm.ac.uk/paris-manchester-1918/" target="_blank" style="font-weight: bold">https://www.rncm.ac.uk/paris-manchester-1918/</a>でご覧いただけます。</p><br>
+    <!-- End page content -->
+    <footer class="w3-light-grey w3-padding-16">
+        <!-- Copyright Notice Start -->
+        <div class="copyright-notice-container">
+            <p class="w3-small" style="text-align: center">© M&Y Translations 2019.</p>
+            <p class="w3-tiny" style="text-align: center">このウェブサイトのいかなる部分も、M&Y Translationsの許可のなく複製、伝送、他のウェブサイトで使用することは、その手段・方法を問わず禁止されます.
+            </p>
+            <!-- Copyright Notice End -->
+            <p class="w3-tiny" style="text-align: center">Website designed and built by Tomasz Szemraj and Tomasz Konecki. Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a>
+            </p>
+        </div>
+    </footer>
 
-    <p style="font-weight: bold">佳子（よしこ）</p>
-    <p>M&Yの「Y」、佳子は日本の名古屋出身で、2010年からイギリスに住んでいます。取得した資格は、文学士号（南山大学で文化人類学専攻）、ケンブリッジ英検FCE、日本翻訳連盟ほんやく検定、DTPディレクターなどです。これまでに手がけたプロジェクトで思い出に残っているものは、翻訳ではDavid du Plessis作・画の絵本「<a href="https://www.waterstones.com/book/mister-king-s-incredible-journey/david-du-plessis/9781770079397" target="_blank" style="font-weight: bold">Mr King's Incredible Journey</a>（ミスター・キングの大冒険）」、DTPではポーリーン・ベル＆竹内耕司（Maitreya）作の「<a href="https://www.amazon.co.uk/Space-Breathe-Thoughts-Japanese-Garden/dp/0995564701" target="_blank" style="font-weight: bold">Space to Breathe: Thoughts from a Japanese Garden</a> 」です。芸術、文学、考古学、歴史（特に英国中世史）にとても興味があり、「Richard III Society」のメンバーです。</p>     
-<!-- Text End -->         
-<!-- About Us End -->
-  
-<!-- Links Start-->
-      <div class="w3-container" id="links" style="margin-top:75px"></div> 
-    <h1 class="w3-xxxlarge w3-text-red" style="font-weight: bold">リンク</h1>
-          <hr style="border:1px solid #bc002d;" class="w3-round">
-    <p style="text-align: right;font-weight: bold"><a href="../../index.html#links" style="text-decoration: none; color: rgb(1, 33, 105); text-align: right">English</a></p>
-          <img src="../images/links.svg">
-
-<!-- Text Start -->        
-       <p style="font-weight: bold">工事中。お待ちください。</p>
-<!-- Text End -->         
-<!-- Links End -->
-    
-<!-- Our Translation Blog Start-->
-      <div class="w3-container" id="our-translation-blog" style="margin-top:75px"></div> 
-    <h1 class="w3-xxxlarge w3-text-red" style="font-weight: bold">翻訳ブログ</h1>
-              <hr style="border:2px solid #bc002d;" class="w3-round">
-    <p style="text-align: right;font-weight: bold"><a href="../../index.html#our-translation-blog" style="text-decoration: none; color: rgb(1, 33, 105); text-align: right">English</a></p>
-          <img src="../images/Blog.svg"><br><br>
-
-<!-- Text Start -->
-    <p style="font-weight: bold">言語・翻訳に関する話題の記事をお届けします…<a href="../blog_dummy_pages/our_translation_blog.html" target="_blank"> 続きを読む</a></p>
-<!-- Text End -->      
-<!-- Our Translation Blog End -->
-    
-<!-- Privacy Policy Start-->
-      <div class="w3-container" id="privacy-policy" style="margin-top:75px"></div> 
-    <h1 class="w3-xxxlarge w3-text-red" style="font-weight: bold">プライバシーポリシー</h1>
-              <hr style="border:2px solid #bc002d;" class="w3-round">
-    <p style="text-align: right;font-weight: bold"><a href="../../index.html#privacy-policy" style="text-decoration: none; color: rgb(1, 33, 105); text-align: right">English</a></p>
-           <img src="../images/Privacy.svg"><br><br>
- 
-<!-- Text Start -->        
-       <p style="color:teal">[To be written]</p>
-<!-- Text End -->         
-<!-- Privacy Policy End -->
-    
-<!-- Contact Us Start-->
-  <div class="w3-container" id="contact-us" style="margin-top:75px"></div> 
-    <h1 class="w3-xxxlarge w3-text-red" style="font-weight: bold">お問い合わせ</h1>
-     <hr style="border:2px solid #bc002d;" class="w3-round">
-         <p style="text-align: right;font-weight: bold"><a href="../../index.html#contact-us" style="text-decoration: none; color: rgb(1, 33, 105); text-align: right">English</a></p> 
-    
-       <!-- Send email icon -->
-       <div class="send-email-icon-container" style="text-align: center">
-        <a href="mailto:m.and.y.translations@gmail.com" title="私たちにメールを送って">
-          <img src="../images/Contact.svg">
-          <!-- <div class="overlay"></div> -->
-        </a>
-      </div>
-      <br>
-      <br>
-      
-      <!-- Text Start -->   
-        <p>翻訳、DTP、その他のプロジェクトについて、どうぞお気軽にご相談ください。お問い合わせには下のフォームをご利用いただけます。</p>
-      <!-- Text End -->
-
-
-<!-- Upload button end-->
-  <div style="text-align:center">
-    <br><p class="w3-large" style="font-weight: bold">ご相談・お問い合わせをお待ちしております。</p>
-    <p> M&Y Translations</p>
-    <div class="contact-details" id="contact-details">
-      <p style="color:#444">
-        事務所住所：<span id="contact-office-address" style="font-weight: 600"></span><br>
-        メールアドレス：<span id="contact-email-address" style="font-weight: 600"></span><br>
-        電話番号: <span id="contact-telephone-number" style="font-weight: 600"></span><br>
-      </p>
-    </div>
-    <button id="contact-details-btn" class="contact-details-btn w3-button w3-red w3-margin-bottom"></button>
-  </div>
-  <br>
-                
-<!-- Contact Us End-->
-
-          
-
-
-</div>
-</div>
-
-<!-- End page content --> 
-<footer class="w3-light-grey w3-padding-16">
-    <!-- Copyright Notice Start -->
-    <div class="copyright-notice-container">
-      <p class="w3-small" style="text-align: center">© M&Y Translations 2019.</p>
-      <p class="w3-tiny" style="text-align: center">このウェブサイトのいかなる部分も、M&Y Translationsの許可のなく複製、伝送、他のウェブサイトで使用することは、その手段・方法を問わず禁止されます.
-      </p>
-      <!-- Copyright Notice End -->
-      <p class="w3-tiny" style="text-align: center">Website designed and built by Tomasz Szemraj and Tomasz Konecki.
-        Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
-          class="w3-hover-opacity">w3.css</a>
-      </p>
-    </div>
-  </footer>
-
-<script src="../../scripts/script-jp.js"></script>
+    <script src="../../scripts/script-jp.js"></script>
+    <script src="../../scripts/three-buttons.js"></script>
 </body>
-</html>
 
+</html>

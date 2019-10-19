@@ -20,7 +20,7 @@ function onClick(element) {
 const officeAddress = "83 Cecil Road, Selly Park, Birmingham B29 7QQ";
 const emailAddress = "m.and.y.translations@gmail.com";
 const phoneNumber = "+44 780 9905";
-const INITIAL = "XXX";
+const INITIAL = "";
 const SEE_DETAILS = "Click to see contact details";
 const SEE_DETAILS_SHORT = "Contact details";
 const HIDE_DETAILS = "Click to hide contact details";

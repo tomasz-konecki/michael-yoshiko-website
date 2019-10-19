@@ -20,11 +20,11 @@ function onClick(element) {
 const officeAddress = "83 Cecil Road, Selly Park, Birmingham B29 7QQ";
 const emailAddress = "m.and.y.translations@gmail.com";
 const phoneNumber = "+44 780 9905";
-const INITIAL = "XXX";
-const SEE_DETAILS = "Click to see contact details";
-const SEE_DETAILS_SHORT = "Contact details";
-const HIDE_DETAILS = "Click to hide contact details";
-const HIDE_DETAILS_SHORT = "Hide details";
+const INITIAL = "";
+const SEE_DETAILS = "クリックして連絡先を表示する";
+const SEE_DETAILS_SHORT = "XXX";
+const HIDE_DETAILS = "クリックして連絡先表示を閉じる";
+const HIDE_DETAILS_SHORT = "XXX";
 const detailsButton = document.getElementById("contact-details-btn");
 const body = document.getElementsByTagName("body")[0];
 const WIDTH_LIMIT = 750;

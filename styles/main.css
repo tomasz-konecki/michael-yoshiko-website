@@ -2005,9 +2005,6 @@ button#contact-details-btn {
 .contact-details-btn {
   width: 30% !important;
   transition: 0.1s ease;
-}
-
-.contact-details-btn {
   outline: none;
 }
 
@@ -2029,25 +2026,6 @@ footer {
 
 .copyright-notice-container a {
   font-style: italic;
-}
-
-@media only screen and (max-width: 460px) {
-  .contact-details-btn {
-    font-size: 8px;
-    padding-left: 10px;
-  }
-}
-
-@media only screen and (max-width: 460px) {
-  .contact-details-btn {
-    font-size: 11px;
-  }
-}
-
-@media only screen and (max-width: 520px) {
-  .contact-details-btn {
-    padding-left: 12px;
-  }
 }
 
 @media only screen and (max-width: 992px) {
