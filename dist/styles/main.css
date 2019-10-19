@@ -2007,7 +2007,7 @@ button#contact-details-btn {
   transition: 0.1s ease;
 }
 
-.contact-details-btn:hover {
+.contact-details-btn {
   outline: none;
 }
 
@@ -2019,7 +2019,7 @@ footer {
   width: 80%;
   margin-left: 20%;
   margin-top: 30px;
-  padding-right: 58px;
+  padding-right: 25px;
 }
 
 .copyright-notice-container {
@@ -2029,4 +2029,13 @@ footer {
 
 .copyright-notice-container a {
   font-style: italic;
+}
+
+@media only screen and (max-width: 992px) {
+  footer {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 30px;
+    padding-right: 10px;
+  }
 }

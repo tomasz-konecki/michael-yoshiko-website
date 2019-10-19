@@ -17,35 +17,67 @@ function onClick(element) {
   captionText.innerHTML = element.alt;
 }
 
+const officeAddress = "83 Cecil Road, Selly Park, Birmingham B29 7QQ";
+const emailAddress = "m.and.y.translations@gmail.com";
+const phoneNumber = "+44 780 9905";
+const INITIAL = "";
+const SEE_DETAILS = "クリックして連絡先を表示する";
+const SEE_DETAILS_SHORT = "XXX";
+const HIDE_DETAILS = "クリックして連絡先表示を閉じる";
+const HIDE_DETAILS_SHORT = "XXX";
+const detailsButton = document.getElementById("contact-details-btn");
+const body = document.getElementsByTagName("body")[0];
+const WIDTH_LIMIT = 750;
+const detailsBox = document.getElementById("contact-details");
+const DETAILS_BOX_WIDTH = Number(
+  window
+    .getComputedStyle(detailsBox, null)
+    .getPropertyValue("width")
+    .substr(0, 3)
+);
+let detailsShown = false;
+
+detailsButton.innerText =
+  DETAILS_BOX_WIDTH > WIDTH_LIMIT ? SEE_DETAILS : SEE_DETAILS_SHORT;
+
+body.onresize = () => handleOnResize();
+
+const handleOnResize = () => {
+  const DETAILS_BOX_WIDTH = Number(
+    window
+      .getComputedStyle(detailsBox, null)
+      .getPropertyValue("width")
+      .substr(0, 3)
+  );
+
+  detailsButton.innerText =
+    DETAILS_BOX_WIDTH > WIDTH_LIMIT ? SEE_DETAILS : SEE_DETAILS_SHORT;
+};
+
 // The 'Contact details' button handler
-document.addEventListener("DOMContentLoaded", () => {
-  const officeAddress = "1 Baker Street, W1U 8ED London";
-  const emailAddress = "example@example.com";
-  const phoneNumber = "123 456 7890";
-  const INITIAL = "XXX";
-  const SEE_DETAILS = "Click to see contact details";
-  const HIDE_DETAILS = "Click to hide contact details";
+const contactDetails = [
+  document.getElementById("contact-office-address"),
+  document.getElementById("contact-email-address"),
+  document.getElementById("contact-telephone-number")
+];
 
-  let detailsShown = false;
+detailsButton.onclick = () => toggleDetails();
 
-  const contactDetails = [
-    document.getElementById("contact-office-address"),
-    document.getElementById("contact-email-address"),
-    document.getElementById("contact-telephone-number")
-  ];
+contactDetails.forEach(item => (item.innerText = INITIAL));
 
-  const detailsButton = document.getElementById("contact-details-btn");
-  detailsButton.innerText = SEE_DETAILS;
-  detailsButton.onclick = () => toggleDetails();
+const toggleDetails = () => {
+  detailsShown = !detailsShown;
+  detailsButton.innerText = !detailsShown
+    ? DETAILS_BOX_WIDTH > WIDTH_LIMIT
+      ? SEE_DETAILS
+      : SEE_DETAILS_SHORT
+    : DETAILS_BOX_WIDTH > WIDTH_LIMIT
+    ? HIDE_DETAILS
+    : HIDE_DETAILS_SHORT;
 
-  contactDetails.forEach(item => (item.innerText = INITIAL));
-
-  const toggleDetails = () => {
-    detailsShown = !detailsShown;
-    detailsButton.innerText = !detailsShown ? SEE_DETAILS : HIDE_DETAILS;
-
-    contactDetails[0].innerText = detailsShown ? officeAddress : INITIAL;
-    contactDetails[1].innerText = detailsShown ? emailAddress : INITIAL;
-    contactDetails[2].innerText = detailsShown ? phoneNumber : INITIAL;
-  };
-});
+  contactDetails[0].innerText = detailsShown ? officeAddress : INITIAL;
+  contactDetails[1].innerHTML = detailsShown
+    ? `<a href="mailto:${emailAddress}" target="_top">${emailAddress}</a>`
+    : INITIAL;
+  contactDetails[2].innerText = detailsShown ? phoneNumber : INITIAL;
+};
