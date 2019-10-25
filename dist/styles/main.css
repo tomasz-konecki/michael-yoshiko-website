@@ -2028,6 +2028,32 @@ footer {
   font-style: italic;
 }
 
+.back-to-top-btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 126px;
+  font-size: 12px;
+  z-index: 999;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.1s ease;
+  opacity: 0.8;
+  -webkit-box-shadow: 6px 6px 17px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 6px 6px 17px -2px rgba(0, 0, 0, 0.75);
+  box-shadow: 6px 6px 17px -2px rgba(0, 0, 0, 0.75);
+}
+
+.back-to-top-btn::after {
+  content: "\f077";
+  font-family: FontAwesome;
+}
+
+.back-to-top-btn:active {
+  transform: translate(0px, 2px);
+}
+
 @media only screen and (max-width: 992px) {
   footer {
     width: 100%;
