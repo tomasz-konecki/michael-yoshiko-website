@@ -1964,7 +1964,7 @@ a {
 
 .contact-details-btn {
   font-size: 14px;
-  width: 30% !important;
+  width: 32% !important;
   transition: 0.1s ease;
   outline: none;
 }
@@ -2033,5 +2033,8 @@ footer {
     margin-left: 0;
     margin-top: 30px;
     padding-right: 10px;
+  }
+  .back-to-top-btn {
+    right: 16px;
   }
 }
