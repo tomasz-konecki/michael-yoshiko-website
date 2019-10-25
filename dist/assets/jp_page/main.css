@@ -2002,7 +2002,7 @@ footer {
 }
 
 .back-to-top-btn {
-  /* display: none; */
+  display: none;
   position: fixed;
   bottom: 20px;
   right: 126px;
