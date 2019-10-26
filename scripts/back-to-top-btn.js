@@ -3,8 +3,8 @@ const backToTopBtn = document.getElementById("back-to-top-btn");
 window.onscroll = () => scrollFunction();
 
 backToTopBtn.onclick = () => {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 80;
+  document.documentElement.scrollTop = 80;
 };
 
 const scrollFunction = () => {
